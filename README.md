@@ -1,17 +1,15 @@
 # Trybe
 
-This repository contains all the learning activities developed by _ [YourNameHere] (LinkDoYourLinkedinHere) _ while studying at [Trybe] (https://www.betrybe.com/): rocket:
-
-_ "Trybe is a school of the future for anyone who wants to improve their life and build a successful career in technology, where the person only pays when they get a good job." _
+This repository contains all the learning activities developed by _ [Bruno Pinheiro] (https://www.linkedin.com/in/brunoopinheirojr/) _ while studying at [Trybe] (https://www.betrybe.com/) :rocket:
 
 The program has more than 1,500 hours of face-to-face and online classrooms, addresses introduction to software development, front-end, back-end, computer science, software engineering, advanced methodologies and behavioral skills.
 
-## Fundamentals of Web Development: white_check_mark:
+## Fundamentals of Web Development :white_check_mark:
 
 ##### Block 1: Introduction - Unix & Shell
 
-- [] 1-3: _Unix & Shell- Part 1_
-- [] 1-4: _Unix & Shell- Part 2_
+- [X] 1-3: _Unix & Shell- Part 1_
+- [X] 1-4: _Unix & Shell- Part 2_
 
 ##### Block 2: Git & GitHub
 
@@ -84,7 +82,7 @@ The program has more than 1,500 hours of face-to-face and online classrooms, add
 - [] 10-3: _Jest - Simulating Behaviors_
 - [] 10-4: _ [Project - Jest Assembling and Mocking] () _
 
-## Front-end development: hourglass_flowing_sand:
+## Front-end development :hourglass_flowing_sand:
 
 ##### Block 11: Introduction - React
 
@@ -140,7 +138,7 @@ The program has more than 1,500 hours of face-to-face and online classrooms, add
 
 - [] 19-1: _ [Project - Recipe App] () _
 
-## Back-end development: hourglass_flowing_sand:
+## Back-end development :hourglass_flowing_sand:
 
 ##### Block 20: Introduction - Relational databases
 
@@ -236,7 +234,7 @@ The program has more than 1,500 hours of face-to-face and online classrooms, add
 
 - [] 34-1: _ [Project - Trybeer V2] () _
 
-## Computer Science: hourglass_flowing_sand:
+## Computer Science :hourglass_flowing_sand:
 
 ##### Block 35: Introduction - Computer Science
 
