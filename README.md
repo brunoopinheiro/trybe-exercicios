@@ -15,7 +15,7 @@ The program has more than 1,500 hours of face-to-face and online classrooms, add
 
 - [X] 2-1: _What is it and what is it for? _
 - [X] 2-2: _Understanding Commands_
-- [] 2-3: _Internet - Understanding how it works_
+- [X] 2-3: _Internet - Understanding how it works_
 
 ##### Block 3: Introduction - HTML & CSS
 
