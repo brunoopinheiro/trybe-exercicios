@@ -3,6 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>CSS Básico</title>
+    <style>
+
+        h2 {
+            color: green;
+        }
+
+        body {
+            background-color: rgb(255, 400, 200);
+        }
+
+        #extinct-specie{
+            background-color: red;
+        }
+
+        #description{
+            color: orange;
+        }
+
+        .list-style{
+            background-color: blue;
+            color: white;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -10,7 +34,7 @@
 
     <img src="https://1.bp.blogspot.com/-EecX12EQ8-c/VSVqRl6mlDI/AAAAAAAAPfE/n_s6PVDzRWM/s1600/sequoiaForestCalifornia.JPG" alt="A sequoia-gigante é grande mesmo!" width="400px">
 
-    <h2>Descrição:</h2>
+    <h2 id="description">Descrição:</h2>
 
     <p>A sequoia-gigante é a maior árvore do <strong>mundo</strong> em termos de volume. Ela atinge em média de 85 - 115 m de altura,
          e 8-12 m em diâmetro. A sequoia-gigante mais velha conhecida possui <em>4.650 anos</em> de idade e se encontra no <strong>Parque Nacional da Sequoia</strong>
@@ -18,7 +42,7 @@
 
     <h2>Espécie Extinta</h2>
 
-    <p>Apesar de ter sido dito que existiam<br>
+    <p id="extinct-specie">Apesar de ter sido dito que existiam<br>
     apenas duas espécies de sequoias no mundo, <br>
     ainda tem uma terceira: a Metasequoia glyptostroboides<br>
     Contudo, ela é considerada extinta, mesmo sendo <br>
@@ -27,14 +51,14 @@
     acordo com a estação.</p>
 
     <h3>Locais onde predominam</h3>
-    <ul>
+    <ul class="list-style">
         <li>Yosemite National Park</li>
         <li>Kings Canyon National Park</li>
         <li>Sequoia National Park</li>
     </ul>
 
     <h3>Árvores comuns no Brasil</h3>
-    <ol>
+    <ol class="list-style">
         <li>Aroeira</li>
         <li>Jatobá</li>
         <li>Pau-Brasil</li>
