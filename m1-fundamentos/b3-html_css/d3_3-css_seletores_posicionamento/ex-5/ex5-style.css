@@ -23,15 +23,16 @@ li em {
     font-weight: bold;
 }
 
+#prog li:nth-child(-n+3) {
+    color: blue;
+}
+#prog .java {
+    background-color: pink;
+}
+
 
 
 /*
-- li = tamanho fonte 20px
-- li italico = font-weight negrito
-
-- lista linguas programacao = 3 primeiras color blue
-    se "java*" background-color pink
-
 - a:hover texto negrito, cor tematica
     StOv (laranja)
     W3Sc (verde)
