@@ -1,0 +1,28 @@
+p {
+    font-family: monospace;
+}
+
+#bauru-header {
+    font-family: "Garamond", "Palatino", serif;
+}
+
+.fato {
+    border-top: 1px solid rgb(222, 222, 222);
+    border-bottom: 1px solid rgb(222, 222, 222);
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.perigo {
+    background-color: red;
+    color: white;
+}
+
+p.perigo {
+    border: 5px solid yellow;
+}
+
+ul.ingredientes-bauru li p {
+    background-color: green;
+    color: white;
+}

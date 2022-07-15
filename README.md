@@ -21,7 +21,7 @@ The program has more than 1,500 hours of face-to-face and online classrooms, add
 
 - [X] 3-1: _HTML & CSS - Page Structures_
 - [X] 3-2: _HTML & CSS - Getting Started with CSS_
-- [] 3-3: _HTML & CSS - Selectors and Positioning_
+- [X] 3-3: _HTML & CSS - Selectors and Positioning_
 - [] 3-4: _Semantic HTML_
 - [] 3-5: _ [Project - HTML & CSS] () _
 
