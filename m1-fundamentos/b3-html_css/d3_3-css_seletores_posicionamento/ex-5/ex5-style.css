@@ -16,6 +16,13 @@ ol li:nth-child(odd) {
     border: 1px solid black;
 }
 
+li {
+    font-size: 20px;
+}
+li em {
+    font-weight: bold;
+}
+
 
 
 /*
