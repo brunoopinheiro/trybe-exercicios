@@ -30,6 +30,25 @@ li em {
     background-color: pink;
 }
 
+#aliados a:hover{
+    color: black;
+}
+#stack:hover {
+    background-color: orange;
+}
+#w3:hover {
+    background-color: darkolivegreen;
+}
+#mdn:hover {
+    background-color: gray;
+}
+#devd:hover {
+    background-color: yellow;
+}
+#trybe:hover {
+    background-color: green;
+}
+
 
 
 /*
