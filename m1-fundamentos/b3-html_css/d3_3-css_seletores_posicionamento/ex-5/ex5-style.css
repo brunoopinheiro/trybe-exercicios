@@ -8,17 +8,17 @@ ol li:nth-child(odd) {
     text-transform: uppercase;
 }
 
+.title {
+    color: red;
+}
+.title em{
+    font-size: 40px;
+    border: 1px solid black;
+}
+
 
 
 /*
-Requisitos Necessarios
-- Itens Lista Ordenada = Fundo Amarelo
-- Numero (even) = color green
-- Numero (odd) = text-transform maiusculo
-
-- h = color red
-- h italico = tamanho fonte 40px, border 1px solid black
-
 - li = tamanho fonte 20px
 - li italico = font-weight negrito
 
