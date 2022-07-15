@@ -1,0 +1,34 @@
+ol li {
+    background-color: yellow;
+}
+ol li:nth-child(even) {
+    color: green;
+}
+ol li:nth-child(odd) {
+    text-transform: uppercase;
+}
+
+
+
+/*
+Requisitos Necessarios
+- Itens Lista Ordenada = Fundo Amarelo
+- Numero (even) = color green
+- Numero (odd) = text-transform maiusculo
+
+- h = color red
+- h italico = tamanho fonte 40px, border 1px solid black
+
+- li = tamanho fonte 20px
+- li italico = font-weight negrito
+
+- lista linguas programacao = 3 primeiras color blue
+    se "java*" background-color pink
+
+- a:hover texto negrito, cor tematica
+    StOv (laranja)
+    W3Sc (verde)
+    MDN (preta)
+    DevDocs (amarela)
+    Trybe (verde)
+*/
