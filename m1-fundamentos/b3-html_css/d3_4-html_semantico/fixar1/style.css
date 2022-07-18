@@ -2,6 +2,20 @@ h1 {
     text-align: center
 }
 
+#podium {
+    display: inline-block;
+}
+#podium li {
+    display: block;
+}
+#top {
+    margin-left: 33%;
+    margin-right: 30%;
+}
+#bottom {
+    display: inline-block;
+}
+
 .first {
     background-color: rgb(235, 200, 84);
     font-size: 20px;
@@ -16,6 +30,7 @@ h1 {
     height: 50px;
     text-align: center;
     width: 300px;
+    float: left;
 }
 
 .third {
@@ -24,4 +39,5 @@ h1 {
     height: 50px;
     text-align: center;
     width: 300px;
+    float: right;
 }
