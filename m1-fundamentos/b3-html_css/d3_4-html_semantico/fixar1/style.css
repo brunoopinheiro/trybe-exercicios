@@ -6,14 +6,11 @@ h1 {
     display: inline-block;
 }
 #podium li {
-    display: block;
+    display: inline-block;
 }
 #top {
     margin-left: 33%;
     margin-right: 30%;
-}
-#bottom {
-    display: inline-block;
 }
 
 .first {
@@ -30,7 +27,6 @@ h1 {
     height: 50px;
     text-align: center;
     width: 300px;
-    float: left;
 }
 
 .third {
@@ -39,7 +35,6 @@ h1 {
     height: 50px;
     text-align: center;
     width: 300px;
-    float: right;
 }
 
 /* Prizes */
