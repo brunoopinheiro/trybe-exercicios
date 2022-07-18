@@ -2,9 +2,21 @@
     border: 2px solid green;
 }
 
+.text {
+    text-align: justify;
+}
+.ref-img {
+    width: 370px;
+    vertical-align: top;
+}
+
+
 header {
-    font-size: 16px;
+    
     text-align: center;
+}
+header h1 {
+    font-size: 26px;
 }
 
 nav ul {
@@ -20,4 +32,45 @@ nav li a {
     text-decoration: none;
     color: darkgray;
     font-weight: 600;
+}
+
+article {
+    display: block;
+}
+
+h2 {
+    font-size: 22px;
+}
+#general-info {
+    display: block;
+}
+#general-info main {
+    margin-left: 1%;
+    max-width: 75%;
+    float: right;
+}
+aside {
+    max-width: 30%;
+    float: left;
+
+}
+aside h3 {
+    font-size: 16px;
+}
+aside ul {
+    padding-inline-start: 0px;
+}
+aside li {
+    list-style-type: none;
+}
+
+#description {
+    display: inline-block;
+}
+#description h2 {
+    text-align: center;
+}
+#desc-container {
+    max-width: 70%;
+    display: inline-block;
 }
