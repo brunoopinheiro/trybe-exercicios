@@ -9,7 +9,10 @@
     width: 370px;
     vertical-align: top;
 }
-
+.source {
+    text-decoration: none;
+    color: black;
+}
 
 header {
     
@@ -74,3 +77,15 @@ aside li {
     max-width: 70%;
     display: inline-block;
 }
+
+#punch {
+    display: inline-block;
+}
+#punch h2 {
+    text-align: center;
+}
+#punch-container {
+    max-width: 70%;
+    display: inline-block;
+}
+
