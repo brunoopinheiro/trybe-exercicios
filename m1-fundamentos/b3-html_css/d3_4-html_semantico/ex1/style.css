@@ -6,7 +6,7 @@
     text-align: justify;
 }
 .ref-img {
-    width: 370px;
+    width: 250px;
     vertical-align: top;
 }
 .source {
@@ -39,6 +39,8 @@ nav li a {
 
 article {
     display: block;
+    max-width: 75%;
+    float: left;
 }
 
 h2 {
@@ -49,21 +51,21 @@ h2 {
 }
 #general-info main {
     margin-left: 1%;
-    max-width: 75%;
+    max-width: 68%;
     float: right;
 }
-aside {
+#cient {
     max-width: 30%;
     float: left;
 
 }
-aside h3 {
+#cient h3 {
     font-size: 16px;
 }
-aside ul {
+#cient ul {
     padding-inline-start: 0px;
 }
-aside li {
+#cient li {
     list-style-type: none;
 }
 
@@ -89,3 +91,7 @@ aside li {
     display: inline-block;
 }
 
+#vid {
+    max-width: auto;
+    float: right;
+}
