@@ -11,7 +11,6 @@
 }
 
 header {
-    
     text-align: center;
 }
 header h1 {
@@ -35,11 +34,15 @@ nav li a {
 
 main {
     border: 2px dotted red;
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 article {
-    display: block;
-    max-width: 75%;
+    max-width: 900px;
     float: left;
     border: 2px dashed red;
 }
@@ -48,16 +51,16 @@ h2 {
     font-size: 22px;
 }
 #general-info {
-    display: inline-block;
     border: 1px solid blue;
     padding: 5px;
+    display: inline-block;
 }
 
 #cient {
     max-width: 300px;
-    float: left;
     border: 3px solid gray;
     padding: 5px;
+    display: inline-block;
 }
 #cient h3 {
     font-size: 16px;
@@ -71,44 +74,40 @@ h2 {
 }
 #facts {
     border: 2px solid red;
-    display: inline-block;
-    width: 650px;
+    width: 450px;
     padding: 5px;
-}
-
-
-
-#description {
     display: inline-block;
 }
+
 #description h2 {
     text-align: center;
 }
 #desc-container {
+    display: inline-block;
     max-width: 695px;
     padding: 5px;
-    display: inline-block;
 }
 
 #punch {
-    display: inline-block;
+
 }
 #punch h2 {
     text-align: center;
 }
 #punch-container {
+    display: inline-block;
     max-width: 695px;
     padding: 5px;
-    display: inline-block;
 }
 
-/* #vid {
+#vid {
+    display: inline-block;
     max-width: 300px;
     border: 2px dashed blue;
     margin: 5px;
     padding: 5px;
-} */
+}
 
 footer {
-    display: block;
+    border: 2px dashed purple;
 }
