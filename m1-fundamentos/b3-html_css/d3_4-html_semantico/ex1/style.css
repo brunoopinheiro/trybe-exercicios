@@ -1,0 +1,108 @@
+.text {
+    text-align: justify;
+}
+.ref-img {
+    width: 250px;
+    vertical-align: top;
+    padding-top: 20px;
+}
+.source {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    text-align: center;
+}
+header h1 {
+    font-size: 26px;
+}
+
+nav ul {
+    display: inline-block;
+}
+nav li {
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
+    
+}
+nav li a {
+    text-decoration: none;
+    color: darkgray;
+    font-weight: 600;
+}
+
+main {
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+article {
+    max-width: 900px;
+    float: left;
+}
+
+h2 {
+    font-size: 22px;
+}
+#general-info {
+    padding: 5px;
+    display: inline-block;
+}
+
+#cient {
+    max-width: 300px;
+    padding: 5px;
+    display: inline-block;
+    border: 2px solid gray;
+}
+#cient h3 {
+    font-size: 16px;
+    text-align: center;
+}
+#cient ul {
+    padding-inline-start: 0px;
+}
+#cient li {
+    list-style-type: none;
+}
+#facts {
+    width: 450px;
+    padding: 5px;
+    display: inline-block;
+}
+
+#description h2 {
+    text-align: center;
+}
+#desc-container {
+    display: inline-block;
+    max-width: 605px;
+    padding: 5px;
+}
+
+#punch h2 {
+    text-align: center;
+}
+#punch-container {
+    display: inline-block;
+    max-width: 605px;
+    padding: 5px;
+}
+
+#vid {
+    display: inline-block;
+    max-width: 300px;
+    margin: 5px;
+    padding: 5px;
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+}
