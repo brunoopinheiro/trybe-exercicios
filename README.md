@@ -23,7 +23,7 @@ The program has more than 1,500 hours of face-to-face and online classrooms, add
 - [X] 3-2: _HTML & CSS - Getting Started with CSS_
 - [X] 3-3: _HTML & CSS - Selectors and Positioning_
 - [X] 3-4: _Semantic HTML_
-- [] 3-5: _ [Project - HTML & CSS] () _
+- [X] 3-5: _ [Project - HTML & CSS] (https://github.com/brunoopinheiro/trybe-exercicios/tree/main/m1-fundamentos/projeto1) _
 
 ##### Block 4: Introduction - JavaScript
 
