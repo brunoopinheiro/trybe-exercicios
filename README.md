@@ -22,12 +22,12 @@ The program has more than 1,500 hours of face-to-face and online classrooms, add
 - [X] 3-1: _HTML & CSS - Page Structures_
 - [X] 3-2: _HTML & CSS - Getting Started with CSS_
 - [X] 3-3: _HTML & CSS - Selectors and Positioning_
-- [] 3-4: _Semantic HTML_
+- [X] 3-4: _Semantic HTML_
 - [] 3-5: _ [Project - HTML & CSS] () _
 
 ##### Block 4: Introduction - JavaScript
 
-- [] 4-1: _JavaScript - Getting Started_
+- [X] 4-1: _JavaScript - Getting Started_
 - [] 4-2: _JavaScript - Array and Loop For_
 - [] 4-3: _JavaScript - Programming Logic and Algorithms_
 - [] 4-4: _JavaScript - Objects and Functions_
