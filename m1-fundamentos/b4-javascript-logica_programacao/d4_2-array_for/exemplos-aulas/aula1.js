@@ -10,6 +10,11 @@ pizzas[4] = 'Sobrescrevendo';
 
 pizzas.push('Adicionando ao final');
 
+pizzas.unshift('Adicionando ao inicio');
+
+pizzas.pop(); //remove o ultimo elemento
+pizzas.shift(); //remove o primeiro elemento
+
 //console.log(pizzas);
 
 //console.log(pizzas.length);
@@ -21,3 +26,6 @@ pizzas.push('Adicionando ao final');
 for (let index = 0; index < pizzas.length; index++) {
     console.log(pizzas[index]);
 }
+
+let indexOfPizza = pizzas.indexOf('Marguerita');
+console.log(indexOfPizza);
