@@ -29,8 +29,8 @@ The program has more than 1,500 hours of face-to-face and online classrooms, add
 
 - [X] 4-1: _JavaScript - Getting Started_
 - [X] 4-2: _JavaScript - Array and Loop For_
-- [ ] 4-3: _JavaScript - Programming Logic and Algorithms_
-- [ ] 4-4: _JavaScript - Objects and Functions_
+- [X] 4-3: _JavaScript - Programming Logic and Algorithms_
+- [X] 4-4: _JavaScript - Objects and Functions_
 - [ ] 4-5: _ [Project - Playground Functions] () _
 
 ##### Block 5: Introduction - JavaScript - Projects
