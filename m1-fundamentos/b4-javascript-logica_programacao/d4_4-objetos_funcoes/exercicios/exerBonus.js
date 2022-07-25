@@ -8,17 +8,17 @@ let conversor = {
     m: 1000,
 }
 
-function converteRomanos (stringRomanos){
+function converteRomanos(stringRomanos) {
     let romanos = "";
     romanos = stringRomanos;
     romanos = romanos.toLowerCase();
 
     let convertido = 0;
-    for (let l = 0; l < romanos.length; l += 1){
+    for (let l = 0; l < romanos.length; l += 1) {
         let letter = romanos[l];
         let nextLetter = romanos[l + 1];
 
-        if(conversor[letter] < conversor[nextLetter]){
+        if (conversor[letter] < conversor[nextLetter]) {
             let aux = conversor[nextLetter] - conversor[letter];
             convertido += aux;
             l += 1;
