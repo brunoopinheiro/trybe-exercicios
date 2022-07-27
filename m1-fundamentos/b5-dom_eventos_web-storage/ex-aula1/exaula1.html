@@ -3,28 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>Faça tudo com DOM</title>
+    <style>
+
+    </style>
 </head>
 <body>
     <header>
         <h2 id="page-title">Título</h2>
-        <p id="paragraph">Dê uma cor para este parágrafo!</p>
+        <p id="paragraph" class="conteudo">Dê uma cor para este parágrafo!</p>
         <h4 id="subtitle">Subtítulo</h4>
-        <p id="second-paragraph">Segundo parágrafo</p>
+        <p id="second-paragraph" class="conteudo">Segundo parágrafo</p>
     </header>
     <script>
-        const paragraph = document.getElementById("paragraph");
+        const paragraph = document.querySelector("#paragraph");
         paragraph.style.color = "red";
 
-        const pTitle = document.getElementById("page-title");
+        const pTitle = document.querySelector("#page-title");
         pTitle.innerText = "One Piece";
 
-        const sPara = document.getElementById("second-paragraph");
+        const sPara = document.querySelector("#second-paragraph");
         sPara.innerHTML = "Rumo à saga final!";
         sPara.style.textAlign = "center";
 
         const sTitle = document.getElementById("subtitle");
         sTitle.innerText = "Shanks aparece!";
         sTitle.style.textAlign = "center";
+
+        let texto = document.querySelectorAll(".conteudo");
+        texto[0].style.textAlign = "center";
+
+        let sub = document.getElementsByTagName("h4");
+        sub[0].style.color = "red";
     </script>
     
 </body>
