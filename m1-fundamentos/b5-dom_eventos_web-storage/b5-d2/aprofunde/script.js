@@ -51,3 +51,32 @@ for (let j = 0; j < 3; j += 1) {
     let h3 = document.createElement('h3');
     main.appendChild(h3);
 }
+
+// Segundo Bloco de Exercicios
+// 1
+title.className = 'title';
+
+// 2
+let descriptionList = document.querySelectorAll('h3');
+for (let k = 0; k < descriptionList.length; k += 1) {
+    descriptionList[k].className = 'description';
+}
+
+// 3
+main.removeChild(leftContent);
+
+// 4
+rightContent.style.marginRight = 'auto';
+
+// 5
+centerContent.parentNode.style.backgroundColor = 'green';
+
+// 6
+let listaNumeros = document.querySelectorAll('li');
+let cabecaLista = document.querySelector('.right-content ul');
+for (let l = 0; l < listaNumeros.length; l += 1) {
+    let numero = listaNumeros[l];
+    if (numero.innerText.includes('nove') || numero.innerText.includes('dez')) {
+        cabecaLista.removeChild(numero);
+    }
+}
