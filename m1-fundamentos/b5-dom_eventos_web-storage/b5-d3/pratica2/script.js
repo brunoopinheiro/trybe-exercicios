@@ -70,6 +70,13 @@ function changeFridayDays() {
     }
 }
 
+function daysZoomIn(event) {
+    event.target.style.fontSize = '30px';
+}
+function daysZoomOut(event) {
+    event.target.style.fontSize = '20px';
+}
+
 
 createDaysOfTheWeek();
 createMonthDays(augustDaysList, 'days', augustFridays, augustHolidays);
@@ -81,3 +88,10 @@ holidaysButton.addEventListener('click', changeBackgroundColor);
 
 const fridaysButton = document.querySelector('.btn-friday');
 fridaysButton.addEventListener('click', changeFridayDays);
+
+const days = document.getElementsByClassName('day');
+for (let i = 0; i < days.length; i += 1) {
+    const day = days[i];
+    day.addEventListener('mouseenter', daysZoomIn);
+    day.addEventListener('mouseleave', daysZoomOut);
+}
