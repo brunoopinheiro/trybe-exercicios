@@ -44,10 +44,40 @@ function createButton(text, id, parentNodeTarget) {
     button.innerHTML = text;
     button.classList.add(id);
     parent.appendChild(button);
+}
 
+function changeBackgroundColor() {
+    const targets = document.getElementsByClassName('holiday');
+    for (let i = 0; i < targets.length; i += 1) {
+        const target = targets[i];
+        if (target.style.backgroundColor === 'white') {
+            target.style.backgroundColor = '#eee';
+        } else {
+            target.style.backgroundColor = 'white';   
+        }
+    }
+}
+
+function changeFridayDays() {
+    const targets = document.getElementsByClassName('friday');
+    for (let i = 0; i < targets.length; i += 1) {
+        const target = targets[i];
+        if(target.innerText === 'Friday!') {
+            target.innerText = augustFridays[i];
+        } else {
+            target.innerText = 'Friday!';
+        }
+    }
 }
 
 
 createDaysOfTheWeek();
 createMonthDays(augustDaysList, 'days', augustFridays, augustHolidays);
 createButton('Holidays', 'btn-holiday', '.buttons-container');
+createButton('Fridays!', 'btn-friday', '.buttons-container');
+
+const holidaysButton = document.querySelector('.btn-holiday');
+holidaysButton.addEventListener('click', changeBackgroundColor);
+
+const fridaysButton = document.querySelector('.btn-friday');
+fridaysButton.addEventListener('click', changeFridayDays);
