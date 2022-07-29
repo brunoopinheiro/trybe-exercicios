@@ -1,3 +1,10 @@
+let augustDaysList = [31];
+for (let i = 1; i <= 31; i += 1) {
+    augustDaysList.push(i);
+}
+let augustFridays = [5, 12, 19, 26];
+let augustHolidays = [24, 25, 31];
+
 function createDaysOfTheWeek() {
     const weekDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     const weekDaysList = document.querySelector('.week-days');
@@ -11,16 +18,6 @@ function createDaysOfTheWeek() {
     };
 };
 
-createDaysOfTheWeek();
-
-let augustDaysList = [31];
-for (let i = 1; i <= 31; i += 1) {
-    augustDaysList.push(i);
-}
-let augustFridays = [5, 12, 19, 26];
-let augustHolidays = [24, 25, 31];
-
-
 function createMonthDays(daysList, targetElementId, fridays, holidays) {
     const monthDaysList = document.getElementById(targetElementId);
 
@@ -32,13 +29,25 @@ function createMonthDays(daysList, targetElementId, fridays, holidays) {
 
         if (holidays.includes(day)) {
             dayListItem.classList.add('holiday');
-        }
+        };
         if (fridays.includes(day)) {
             dayListItem.classList.add('friday');
-        }
+        };
 
         monthDaysList.appendChild(dayListItem);
-    }
+    };
+};
+
+function createButton(text, id, parentNodeTarget) {
+    const parent = document.querySelector(parentNodeTarget);
+    const button = document.createElement('button');
+    button.innerHTML = text;
+    button.classList.add(id);
+    parent.appendChild(button);
+
 }
 
+
+createDaysOfTheWeek();
 createMonthDays(augustDaysList, 'days', augustFridays, augustHolidays);
+createButton('Holidays', 'btn-holiday', '.buttons-container');
