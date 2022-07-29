@@ -17,4 +17,28 @@ let augustDaysList = [31];
 for (let i = 1; i <= 31; i += 1) {
     augustDaysList.push(i);
 }
-console.log(augustDaysList);
+let augustFridays = [5, 12, 19, 26];
+let augustHolidays = [24, 25, 31];
+
+
+function createMonthDays(daysList, targetElementId, fridays, holidays) {
+    const monthDaysList = document.getElementById(targetElementId);
+
+    for (let i = 0; i < daysList.length; i += 1) {
+        const day = daysList[i];
+        const dayListItem = document.createElement('li');
+        dayListItem.innerText = day;
+        dayListItem.className = "day";
+
+        if (holidays.includes(day)) {
+            dayListItem.classList.add('holiday');
+        }
+        if (fridays.includes(day)) {
+            dayListItem.classList.add('friday');
+        }
+
+        monthDaysList.appendChild(dayListItem);
+    }
+}
+
+createMonthDays(augustDaysList, 'days', augustFridays, augustHolidays);
