@@ -77,6 +77,12 @@ function daysZoomOut(event) {
     event.target.style.fontSize = '20px';
 }
 
+function addTask(task, parentNodeTarget) {
+    const newTask = document.createElement('span');
+    newTask.innerText = task;
+
+    parentNodeTarget.appendChild(newTask);
+}
 
 createDaysOfTheWeek();
 createMonthDays(augustDaysList, 'days', augustFridays, augustHolidays);
@@ -95,3 +101,6 @@ for (let i = 0; i < days.length; i += 1) {
     day.addEventListener('mouseenter', daysZoomIn);
     day.addEventListener('mouseleave', daysZoomOut);
 }
+
+const myTasks = document.querySelector('.my-tasks');
+addTask('code', myTasks);
