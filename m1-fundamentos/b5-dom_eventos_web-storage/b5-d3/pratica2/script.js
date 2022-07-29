@@ -1,3 +1,5 @@
+const myTasks = document.querySelector('.my-tasks');
+
 let augustDaysList = [31];
 for (let i = 1; i <= 31; i += 1) {
     augustDaysList.push(i);
@@ -84,6 +86,50 @@ function addTask(task, parentNodeTarget) {
     parentNodeTarget.appendChild(newTask);
 }
 
+function selectTask(event) {
+    if(event.target.classList.contains('selected')) {
+        event.target.classList.remove('selected');
+        console.log('Selection removed.');
+    } else {
+        event.target.classList.add('selected');
+        console.log('This task is now selected.');
+    }
+}
+
+function addTaskLegend(cor) {
+    const newLegend = document.createElement('div');
+    newLegend.classList.add('task');
+    newLegend.style.backgroundColor = cor;
+    newLegend.addEventListener('click', selectTask);
+
+    myTasks.appendChild(newLegend);
+}
+
+function addLegendToDay(event) {
+    const taskSelected = document.querySelector('.selected');
+    if (event.target.style.color === '' || event.target.style.color === 'rgb(119, 119, 119)' ) {
+        event.target.style.color = taskSelected.style.backgroundColor;
+    } else {
+        event.target.style.color = 'rgb(119, 119, 119)';
+    }
+}
+
+function getAppointments() {
+    const taskInput = document.getElementById('task-input');
+    let text = taskInput.value;
+    taskInput.value = '';
+    return text;
+}
+
+function addAppointment() {
+    let text = getAppointments();
+    if (text === '') {
+        window.alert('TYPE IN A TASK BEFORE ADD');
+    } else {
+        addTask(text, myTasks);
+    }
+}
+
 createDaysOfTheWeek();
 createMonthDays(augustDaysList, 'days', augustFridays, augustHolidays);
 createButton('Holidays', 'btn-holiday', '.buttons-container');
@@ -100,7 +146,18 @@ for (let i = 0; i < days.length; i += 1) {
     const day = days[i];
     day.addEventListener('mouseenter', daysZoomIn);
     day.addEventListener('mouseleave', daysZoomOut);
+    day.addEventListener('click', addLegendToDay);
 }
 
-const myTasks = document.querySelector('.my-tasks');
-addTask('code', myTasks);
+const addButton = document.querySelector('#btn-add');
+addButton.addEventListener('click', addAppointment);
+
+const input = document.getElementById('task-input');
+input.addEventListener('keypress', function(event) {
+    if(event.key === 'Enter'){
+        addButton.click();
+    }
+})
+
+//testes
+addTaskLegend('green');
