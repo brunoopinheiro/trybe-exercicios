@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.color {
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 15px;
+    height: 15px;
+    padding: 10px;
+}
+
+#black-selector {
+    background-color: black;
+}
+
+#red-selector {
+    background-color: red;
+}
+
+#blue-selector {
+    background-color: blue;
+}
+
+#green-selector {
+    background-color: green;
+}
+
+/* https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout */
+#pixel-board {
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 2px;
+    padding: 2px;
+}
+
+.pixel {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+}
