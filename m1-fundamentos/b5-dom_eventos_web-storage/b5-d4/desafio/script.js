@@ -1,6 +1,38 @@
 // Resolução do desafio da aula ao vivo
+const borda = document.querySelector('.paleta-bordas .borda');
+const bordaDupla = document.querySelector('.paleta-bordas .borda-dupla');
+const bordaArredondada = document.querySelector('.paleta-bordas .borda-arredondada');
+const bordaPontilhada = document.querySelector('.paleta-bordas .borda-pontilhada');
+const headerContainer = document.querySelector('.main-header');
+const monthContainer = document.querySelector('.month-container');
+const weekDaysContainer = document.querySelector('.week-days-container');
+const daysContainer = document.querySelector('.days-container');
 
+function selectBorder(event) {
+    // depois tratar multiplas selecoes
+    if (event.target.classList.contains('selected')) {
+        event.target.classList.remove('selected');
+    } else {
+        event.target.classList.add('selected');
+    }
+}
 
+function addSelectedToDiv(event) {
+    let bordaSelecionada = document.querySelector('.selected');
+    if (event.target.style.border != '') {
+        event.target.style.border = '';
+        event.target.style.borderStyle = '';
+    } else {
+        event.target.classList.add(bordaSelecionada.classList[0]);
+    }
+}
+
+borda.addEventListener('click', selectBorder);
+bordaDupla.addEventListener('click', selectBorder);
+bordaArredondada.addEventListener('click', selectBorder);
+bordaPontilhada.addEventListener('click', selectBorder);
+
+headerContainer.addEventListener('click', addSelectedToDiv);
 // Fim da resolução
 
 const btnHoliday = document.getElementById('btn-holiday');
