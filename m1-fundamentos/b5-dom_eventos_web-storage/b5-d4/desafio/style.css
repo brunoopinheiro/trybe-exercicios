@@ -1,0 +1,110 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+  }
+ 
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+ 
+  .main-header {
+    color: green;
+    text-align: center;
+    padding: 25px;
+  }
+ 
+  .main-header h1 {
+    margin: 0;
+  }
+ 
+  .month-container {
+    padding: 55px 25px;
+    background-color: green;
+    text-align: center;
+  }
+ 
+  .month-container ul li {
+    color: white;
+    font-size: 30px;
+    letter-spacing: 3px;
+  }
+ 
+  .week-days {
+    margin: 0px;
+    padding: 10px 0;
+    background-color: #ddd;
+    font-size: 20px;
+  }
+ 
+  .week-days li {
+    display: inline-block;
+    vertical-align: middle;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+  }
+ 
+  .controls-container {
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+ 
+  .days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+  }
+ 
+  .days li {
+    display: inline-block;
+    vertical-align: middle;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #777;
+  }
+ 
+  .margen-geral {
+    margin: 5px;
+  }
+ 
+  .borda {
+    border: 3px solid darkslategrey;
+  }
+ 
+  .borda-pontilhada {
+    border: 3px solid darkslategrey;
+    border-style: dotted;
+  }
+ 
+  .borda-arredondada {
+    border: 3px solid darkslategrey;
+    border-radius: 10px;
+  }
+ 
+  .borda-dupla {
+    border: 5px solid darkslategrey;
+    border-style: double;
+  }
+ 
+  .margin-paleta {
+    margin-left: 15px;
+  }
+ 
+  .paleta-bordas {
+    height: 90px;
+    display: flex;
+    justify-content: flex-start;
+  }
+ 
+  .paleta-bordas div {
+    width: 80px;
+    min-height: 80px;
+    display: inline-block;
+    margin-right: 10px;
+    text-align: center;
+    color: white;
+  } 
