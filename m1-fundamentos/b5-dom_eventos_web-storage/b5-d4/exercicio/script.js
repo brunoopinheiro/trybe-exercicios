@@ -1,27 +1,39 @@
 const mainBgColorInput = document.getElementById('main-bg-color-input');
 const artBgColorInput = document.getElementById('article-bg-color-input');
+const mainSections = document.getElementsByClassName('side-color');
+const articleSections = document.getElementsByTagName('article');
+
+function loadBgColor(color, targetList) {
+    console.log('painting targets');
+    for (let i = 0; i < targetList.length; i += 1){
+        let target = targetList[i];
+        target.style.backgroundColor = color;
+    }
+}
 
 function setMainBgColor() {
-    const sidebarColor = mainBgColorInput.value;
-    const sidebarSections = document.getElementsByClassName('side-color');
-    for (let i = 0; i < sidebarSections.length; i += 1) {
-        let section = sidebarSections[i];
-        section.style.backgroundColor = sidebarColor;
-    }
+    const mainSectionColors = mainBgColorInput.value;
+    localStorage.setItem('mainBgColor', mainSectionColors);   
+    loadBgColor(mainSectionColors, mainSections);
 }
 
 function setArticleBgColor() {
     const articleColor = artBgColorInput.value;
-    const articleSections = document.getElementsByTagName('article');
-    for (let i = 0; i < articleSections.length; i += 1){
-        let section = articleSections[i];
-        section.style.backgroundColor = articleColor;
-    }
+    localStorage.setItem('articleBgColor', articleColor);
+    loadBgColor(articleColor, articleSections);
 }
 
-// window.onload = function () {
 
-// }
+window.onload = function () {
+    if (localStorage.getItem('mainBgColor') != null){
+        let color = localStorage.getItem('mainBgColor');
+        loadBgColor(color, mainSections);
+    }
+    if (localStorage.getItem('articleBgColor') != null){
+        let color = localStorage.getItem('articleBgColor');
+        loadBgColor(color, articleSections);
+    }
+}
 
 mainBgColorInput.addEventListener('change', setMainBgColor);
 artBgColorInput.addEventListener('change', setArticleBgColor);
