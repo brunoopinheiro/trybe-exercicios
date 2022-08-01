@@ -70,7 +70,7 @@ window.onload = function () {
     if (localStorage.getItem('fontSize') != null) {
         let size = localStorage.getItem('fontSize');
         loadTextFontSize(size);
-    }
+    };
 };
 
 mainBgColorInput.addEventListener('change', setMainBgColor);
