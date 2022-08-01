@@ -4,7 +4,6 @@
 
 header {
     padding: 10px;
-    background-color: lightslategray;
 }
 
 #main-title {
@@ -36,5 +35,17 @@ aside {
     vertical-align: top;
     padding: 10px;
     padding-top: 20px;
+    margin-right: 10px;
+}
+
+aside h3 {
+    text-align: center;
+}
+
+aside input {
+    display: block;
+}
+
+.side-color {
     background-color: lightslategray;
 }

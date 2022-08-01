@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header id="header">
+    <header id="header" class="side-color">
         <h1 id="main-title">Lorem Ipsum</h1>
     </header>
     <main id="main">
@@ -25,12 +25,12 @@
             </section>
         </article>
     </main>
-    <aside id="sidebar">
+    <aside id="sidebar" class="side-color">
         <h3 class="aside-title text">Select Your Preferences</h3>
         <section class="selector">
             <h4 class="aside-title text">Background Color:</h4>
-            <ul id="bg-selector">
-            </ul>
+            <input type="text" id="main-bg-color-input" placeholder="main background color">
+            <input type="text" id="article-bg-color-input" placeholder="article background color">
         </section>
         <section class="selector">
             <h4 class="aside-title text">Text Color:</h4>
@@ -53,5 +53,6 @@
             </ul>
         </section>
     </aside>
+    <script src="script.js"></script>
 </body>
 </html>
