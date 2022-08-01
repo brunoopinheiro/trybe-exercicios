@@ -42,8 +42,8 @@ window.onload = function () {
         let color = localStorage.getItem('articleBgColor');
         loadBgColor(color, articleSections);
     };
-    if (sessionStorage.getItem('textColor') != null){
-        let color = sessionStorage.getItem('textColor');
+    if (localStorage.getItem('textColor') != null){
+        let color = localStorage.getItem('textColor');
         loadTextColor(color);
     }
 }
@@ -52,7 +52,9 @@ mainBgColorInput.addEventListener('change', setMainBgColor);
 artBgColorInput.addEventListener('change', setArticleBgColor);
 textColorOption1.addEventListener('click', function () {
     loadTextColor('black');
+    localStorage.setItem('textColor', 'black');
 });
 textColorOption2.addEventListener('click', function () {
     loadTextColor('white');
+    localStorage.setItem('textColor', 'white');
 });
