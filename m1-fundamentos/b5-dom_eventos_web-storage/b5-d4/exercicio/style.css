@@ -46,6 +46,30 @@ aside input {
     display: block;
 }
 
+aside section {
+    padding: 5px;
+}
+
 .side-color {
     background-color: lightslategray;
+}
+
+aside section ul {
+    padding: 5px;
+}
+
+aside section li {
+    list-style-type: none;
+}
+
+#text-color-op1 {
+    color: black;
+    font-weight: 700;
+    border: 1px solid black;
+}
+
+#text-color-op2 {
+    color: white;
+    font-weight: 700;
+    border: 1px solid white;
 }
