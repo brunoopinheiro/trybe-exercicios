@@ -37,8 +37,8 @@ The program has more than 1,500 hours of face-to-face and online classrooms, add
 
 - [X] 5-1: _JavaScript - DOM and selectors_
 - [X] 5-2: _JavaScript - Working with items_
-- [ ] 5-3: _JavaScript - Events_
-- [ ] 5-4: _JavaScript - Web Storage_
+- [X] 5-3: _JavaScript - Events_
+- [X] 5-4: _JavaScript - Web Storage_
 - [ ] 5-5: _ [Project - Meme Generator] () _
 - [ ] 5-6: _ [Project - Art with Pixels] () _
 - [ ] 5-7: _ [Project - To-do list] () _
