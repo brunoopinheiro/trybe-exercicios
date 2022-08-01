@@ -16,7 +16,6 @@ function loadTextFontSize(number) {
     };
 };
 
-// 12 14 16 18 20
 for (let f = 12; f <= 20; f += 2) {
     let option = document.createElement('li');
     option.innerText = f;
