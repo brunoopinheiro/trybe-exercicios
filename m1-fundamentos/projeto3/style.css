@@ -43,3 +43,9 @@
     height: 40px;
     border: 1px solid black;
 }
+
+#clear-board {
+    width: 60px;
+    padding: 3px;
+    margin: 5px;
+}

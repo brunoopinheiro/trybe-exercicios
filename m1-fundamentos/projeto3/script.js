@@ -3,6 +3,8 @@ const blackSelector = document.getElementById('black-selector');
 const redSelector = document.getElementById('red-selector');
 const blueSelector = document.getElementById('blue-selector');
 const greenSelector = document.getElementById('green-selector');
+const clearButton = document.getElementById('clear-board');
+const pixels = document.getElementsByClassName('pixel');
 
 function selectColor(event) {
     const colorSelectors = document.getElementsByClassName('color');
@@ -25,6 +27,13 @@ function paint(event) {
     }
 }
 
+function clearBoard() {
+    for (let i = 0; i < pixels.length; i += 1) {
+        let pixel = pixels[i];
+        pixel.style.backgroundColor = 'white';
+    }
+}
+
 for (let i = 0; i < 5; i += 1) {
     for (let j = 0; j < 5; j += 1) {
         let pixel = document.createElement('div');
@@ -42,7 +51,6 @@ window.onload = function () {
     greenSelector.style.backgroundColor = 'green';
 }
 
-const pixels = document.getElementsByClassName('pixel');
 for (let i = 0; i < pixels.length; i += 1) {
     const pixel = pixels[i];
     pixel.addEventListener('click', paint);
@@ -52,3 +60,4 @@ blackSelector.addEventListener('click', selectColor);
 redSelector.addEventListener('click', selectColor);
 blueSelector.addEventListener('click', selectColor);
 greenSelector.addEventListener('click', selectColor);
+clearButton.addEventListener('click', clearBoard);
