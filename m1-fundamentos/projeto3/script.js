@@ -7,6 +7,7 @@ const clearButton = document.getElementById('clear-board');
 const pixels = document.getElementsByClassName('pixel');
 const generateBoardButton = document.getElementById('generate-board');
 const randomColorsButton = document.getElementById('randomize-colors');
+const newColorButton = document.getElementById('color-to-selector');
 
 function selectColor(event) {
     const colorSelectors = document.getElementsByClassName('color');
@@ -63,7 +64,7 @@ function generateGrid(value) {
 }
 
 window.onload = function () {
-    generateGrid(5);
+    generateGrid(9);
     blackSelector.classList.add('selected');
     blackSelector.style.backgroundColor = 'black';
     secondSelector.style.backgroundColor = generateRandomColor();
@@ -72,6 +73,9 @@ window.onload = function () {
 }
 
 blackSelector.addEventListener('click', selectColor);
+blackSelector.addEventListener('dblclick', function () {
+    blackSelector.style.backgroundColor = 'black';
+});
 secondSelector.addEventListener('click', selectColor);
 thirdSelector.addEventListener('click', selectColor);
 fourthSelector.addEventListener('click', selectColor);
@@ -81,7 +85,13 @@ generateBoardButton.addEventListener('click', function () {
     generateGrid(inputBoardSize.value);
 })
 randomColorsButton.addEventListener('click', function () {
+    blackSelector.style.backgroundColor = 'black';
     secondSelector.style.backgroundColor = generateRandomColor();
     thirdSelector.style.backgroundColor = generateRandomColor();
     fourthSelector.style.backgroundColor = generateRandomColor();
+})
+newColorButton.addEventListener('click', function () {
+    const selector = document.querySelector('.selected');
+    const inputColor = document.getElementById('new-color');
+    selector.style.backgroundColor = inputColor.value;
 })

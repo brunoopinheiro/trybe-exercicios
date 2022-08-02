@@ -14,7 +14,7 @@ header {
 }
 
 header h1 {
-    color: #41BFB3;
+    color: #260101;
     font-weight: 700;
 }
 
@@ -104,9 +104,24 @@ header h1 {
     margin: 5px;
 }
 
-#randomize-colors {
+#randomize-colors, #color-to-selector {
     padding: 3px;
     margin: 5px;
     padding-left: 5px;
     padding-right: 5px;
+}
+
+#credits {
+    margin-top: 8px;
+    font-style: italic;
+    font-weight: 200;
+    font-size: smaller;
+    text-align: center;
+    color: #260101;
+}
+
+#credits a {
+    text-decoration: none;
+    color: #9BF2EA;
+    font-weight: 400;
 }
