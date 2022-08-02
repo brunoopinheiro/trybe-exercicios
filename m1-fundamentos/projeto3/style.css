@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+    background-color: #275950;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+header h1 {
+    color: #260101;
+    font-weight: 700;
+}
+
+#color-palette {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    background-color: #260101;
+    margin-bottom: 8px;
+    border-radius: 15px;
+}
+
+.color {
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    cursor: copy;
+}
+
+.selected {
+    transform: translateY(-10px);
+    outline: 2px solid #9BF2EA;
+}
+
+#tools {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #260101;
+}
+
+#tools button {
+    font-weight: 600;
+    border: none;
+    background-color: #2A8C82;
+    color: #260101;
+    cursor: pointer;
+}
+
+/* https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout */
+#pixel-board {
+
+    --gridSize: 5;
+
+    background-color: #260101;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(var(--gridSize), 1fr);
+    grid-template-rows: repeat(var(--gridSize), 1fr);
+    gap: 1px;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+}
+
+.pixel {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+}
+
+#clear-board {
+    width: 60px;
+    padding: 3px;
+    margin: 5px;
+}
+
+#board-size {
+    width: 40px;
+    padding: 3px;
+    margin: 5px;
+}
+
+#generate-board {
+    width: 40px;
+    padding: 3px;
+    margin: 5px;
+}
+
+#randomize-colors, #color-to-selector {
+    padding: 3px;
+    margin: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#credits {
+    margin-top: 8px;
+    font-style: italic;
+    font-weight: 200;
+    font-size: smaller;
+    text-align: center;
+    color: #260101;
+}
+
+#credits a {
+    text-decoration: none;
+    color: #9BF2EA;
+    font-weight: 400;
+}
