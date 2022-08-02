@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Pixels Art || TRYBE</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <h1 id="title">Paleta de Cores</h1>
+        <h1 id="title">Color Palette</h1>
     </header>
     <main>
         <section id="color-palette">
@@ -19,13 +26,15 @@
             <div id="fourth-selector" class="color"></div>
         </section>
         <section id="tools">
-            <button id="clear-board">Limpar</button>
-            <input type="number" id="board-size" placeholder="5">
+            <button id="clear-board">Clear</button>
+            <input type="number" id="board-size" placeholder="5" min="1">
             <button id="generate-board">VQV</button>
+            <button id="randomize-colors">Random Colors</button>
         </section>
         <section id="pixel-board">
         </section>
     </main>
     <script src="script.js"></script>
 </body>
+
 </html>

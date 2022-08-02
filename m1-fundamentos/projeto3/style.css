@@ -1,42 +1,83 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+    background-color: #275950;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+header h1 {
+    color: #41BFB3;
+    font-weight: 700;
+}
+
+#color-palette {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    background-color: #260101;
+    margin-bottom: 8px;
+    border-radius: 15px;
 }
 
 .color {
     display: inline-block;
     border: 1px solid black;
     border-radius: 15px;
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     padding: 10px;
+    cursor: copy;
 }
 
-#black-selector {
-    background-color: black;
+.selected {
+    transform: translateY(-10px);
+    outline: 2px solid #9BF2EA;
 }
 
-#red-selector {
-    background-color: red;
+#tools {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #260101;
 }
 
-#blue-selector {
-    background-color: blue;
-}
-
-#green-selector {
-    background-color: green;
+#tools button {
+    font-weight: 600;
+    border: none;
+    background-color: #2A8C82;
+    color: #260101;
+    cursor: pointer;
 }
 
 /* https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout */
 #pixel-board {
+
     --gridSize: 5;
+
+    background-color: #260101;
     width: fit-content;
     display: grid;
     grid-template-columns: repeat(var(--gridSize), 1fr);
     grid-template-rows: repeat(var(--gridSize), 1fr);
-    gap: 2px;
-    padding: 2px;
+    gap: 1px;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
 }
 
 .pixel {
@@ -61,4 +102,11 @@
     width: 40px;
     padding: 3px;
     margin: 5px;
+}
+
+#randomize-colors {
+    padding: 3px;
+    margin: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
 }

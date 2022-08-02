@@ -6,6 +6,7 @@ const fourthSelector = document.getElementById('fourth-selector');
 const clearButton = document.getElementById('clear-board');
 const pixels = document.getElementsByClassName('pixel');
 const generateBoardButton = document.getElementById('generate-board');
+const randomColorsButton = document.getElementById('randomize-colors');
 
 function selectColor(event) {
     const colorSelectors = document.getElementsByClassName('color');
@@ -42,14 +43,12 @@ function clearBoard() {
 
 function generateGrid(value) {
     pixelBoard.innerHTML = '';
-    let gridSize;
-    if (value < 5) {
+    let gridSize = value;
+    if (gridSize < 5) {
         window.alert('Board inválido!');
         gridSize = 5;
-    } else if (value > 50) {
-        gridSize = 50;
-    } else {
-        gridSize = value;
+    } else if (gridSize > 100) {
+        gridSize = 100;
     }
     pixelBoard.style.setProperty('--gridSize', gridSize);
     for (let i = 0; i < gridSize; i += 1) {
@@ -80,4 +79,9 @@ clearButton.addEventListener('click', clearBoard);
 generateBoardButton.addEventListener('click', function () {
     const inputBoardSize = document.getElementById('board-size');
     generateGrid(inputBoardSize.value);
+})
+randomColorsButton.addEventListener('click', function () {
+    secondSelector.style.backgroundColor = generateRandomColor();
+    thirdSelector.style.backgroundColor = generateRandomColor();
+    fourthSelector.style.backgroundColor = generateRandomColor();
 })
