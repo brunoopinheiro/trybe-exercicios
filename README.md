@@ -23,7 +23,7 @@ The program has more than 1,500 hours of face-to-face and online classrooms, add
 - [X] 3-2: _HTML & CSS - Getting Started with CSS_
 - [X] 3-3: _HTML & CSS - Selectors and Positioning_
 - [X] 3-4: _Semantic HTML_
-- [X] 3-5: [Project - HTML & CSS] (https://github.com/brunoopinheiro/trybe-exercicios/tree/main/m1-fundamentos/projeto1)
+- [X] 3-5: _[Project - HTML & CSS] (https://github.com/brunoopinheiro/trybe-exercicios/tree/main/m1-fundamentos/projeto1)_
 
 ##### Block 4: Introduction - JavaScript
 
@@ -31,7 +31,7 @@ The program has more than 1,500 hours of face-to-face and online classrooms, add
 - [X] 4-2: _JavaScript - Array and Loop For_
 - [X] 4-3: _JavaScript - Programming Logic and Algorithms_
 - [X] 4-4: _JavaScript - Objects and Functions_
-- [X] 4-5: _ [Project - Playground Functions] () _
+- [X] 4-5: _[Project - Playground Functions]_
 
 ##### Block 5: Introduction - JavaScript - Projects
 
@@ -39,15 +39,15 @@ The program has more than 1,500 hours of face-to-face and online classrooms, add
 - [X] 5-2: _JavaScript - Working with items_
 - [X] 5-3: _JavaScript - Events_
 - [X] 5-4: _JavaScript - Web Storage_
-- [ ] 5-5: _ [Project - Meme Generator] () _
-- [ ] 5-6: _ [Project - Art with Pixels] () _
-- [ ] 5-7: _ [Project - To-do list] () _
-- [ ] 5-7: _ [Project - Guess the Color] () _
-- [ ] 5-7: _ [Project - Mysterious Letter] () _
+- [X] 5-5: _[Project - Art with Pixels] (https://github.com/brunoopinheiro/trybe-exercicios/tree/main/m1-fundamentos/projeto3)_
+- [X] 5-6: _[Bonus Project - Meme Generator]_
+- [ ] 5-6: _ [Bonus Project - To-do list] _
+- [X] 5-6: _[Bonus Project - Guess the Color]_
+- [ ] 5-6: _ [Bonus Project - Mysterious Letter] _
 
 ##### Block 6: Advanced HTML & CSS
 
-- [ ] 6-1: _HTML & CSS - Forms_
+- [X] 6-1: _HTML & CSS - Forms_
 - [ ] 6-2: _Javascript Libraries and CSS Frameworks_
 - [ ] 6-3: _CSS Flexbox - Part 1_
 - [ ] 6-4: _CSS Flexbox - Part 2_
