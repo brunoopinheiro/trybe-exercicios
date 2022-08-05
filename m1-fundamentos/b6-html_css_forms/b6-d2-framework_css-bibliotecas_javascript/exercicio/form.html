@@ -7,12 +7,15 @@
   <title>Formulário TrybeTrip</title>
   <link rel="stylesheet" href="jquery-3.6.0.min.js">
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
 </head>
 <body>
   <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
     <h1 class="fs-1">Formulário TrybeTrip</h1>
   </header>
-  <form action="" method="get" class="p-4 p-md-5 border rounded-3 bg-light">
+  <form action="" method="get" class="p-4 p-md-5 border rounded-3 bg-light" id="form">
     <section class="px-4 py-0 my-3 text-center">
       <label for="full-name">Nome:
         <input type="text" name="full-name" id="full-name" minlength="10" maxlength="40" placeholder="digite seu nome completo">
