@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário TrybeTrip</title>
+  <link rel="stylesheet" href="jquery-3.6.0.min.js">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+    <h1 class="fs-1">Formulário TrybeTrip</h1>
+  </header>
+  <form action="" method="get" class="p-4 p-md-5 border rounded-3 bg-light">
+    <section class="px-4 py-0 my-3 text-center">
+      <label for="full-name">Nome:
+        <input type="text" name="full-name" id="full-name" minlength="10" maxlength="40" placeholder="digite seu nome completo">
+      </label>
+      <br>
+      <br>
+      <label for="input-email">E-mail:
+        <input type="email" name="email" id="input-email" placeholder="digite seu e-mail">
+      </label>
+      <br>
+      <br>
+    </section>
+    <section class="px-4 py-0 my-3 text-center">
+      <fieldset>
+        <legend>Escolha seu destino preferido:</legend>
+        <label for="destino-1">
+          <input type="radio" name="destinos" id="destino-1" value="cidade">Cidade
+        </label>
+        <label for="destino-2">
+          <input type="radio" name="destinos" id="destino-2" value="campo">Campo
+        </label>
+        <label for="destino-3">
+          <input type="radio" name="destinos" id="destino-3" value="praia" checked>Praia
+        </label>
+        <label for="destino-4">
+          <input type="radio" name="destinos" id="destino-4" value="montanhas">Montanhas
+        </label>
+      </fieldset>
+      <br>
+    </section>
+    <section class="px-4 py-0 my-3 text-center">
+      <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
+      <textarea name="resposta" id="input-answer" cols="30" rows="10" maxlength="500"></textarea>
+      <br>
+      <br>
+    </section>
+    <section class="px-4 py-0 my-3 text-center">
+      <label for="trip-date">Qual a melhor data para realizar sua viagem?
+        <input type="date" name="trip-date" id="trip-date" value="2022-02-22">
+      </label>
+      <br>
+      <br>
+    </section>
+    <section class="px-4 py-0 my-3 text-center">
+      <label for="check-promo">
+        <input type="checkbox" name="promo" id="check-promo">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+      </label>
+      <br>
+      <label for="check-termo">
+        <input type="checkbox" name="termo" id="check-termo" required>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+      </label>
+      <br>
+      <br>
+    </section>
+    <section class="px-4 py-0 my-3 text-center">
+      <button type="submit" id="submit-button" class="btn btn-primary btn-sm">Enviar! VQV!</button>
+      <button type="reset" class="btn btn-outline-secondary btn-sm">Recomeçar</button>
+    </section>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
