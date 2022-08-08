@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +16,7 @@
     }
 
     div {
-      width: 200px;
+      width: 300px;
       min-height: 70px;
       border: 1px solid blue;
       margin: 20px;
@@ -40,7 +40,14 @@
     .teste-flex {
       display: flex;
       flex-flow: row wrap;
+      justify-content: center;
+      align-items: flex-end;
+      align-content: space-between;
     }
+
+    /* .p-dif {
+      height: 50px;
+    } */
   </style>
 </head>
 <body>
@@ -72,9 +79,9 @@
   <!-- display: flex -->
   <h2>flex</h2>
   <div class="teste-flex">
-    <p>Tamires Nunes</p>
-    <p>Lucas Ferraz</p>
-    <p>Gabriel Oliva</p>
+    <p class="p-dif">1 - Tamires Nunes</p>
+    <p>2 - Lucas Ferraz</p>
+    <p>3 - Gabriel Oliva</p>
   </div>
 </body>
 </html>
