@@ -41,7 +41,7 @@ The program has more than 1,500 hours of face-to-face and online classrooms, add
 - [X] 5-4: _JavaScript - Web Storage_
 - [X] 5-5: _[Project - Art with Pixels] (https://github.com/brunoopinheiro/trybe-exercicios/tree/main/m1-fundamentos/projeto3)_
 - [X] 5-6: _[Bonus Project - Meme Generator]_
-- [ ] 5-6: _ [Bonus Project - To-do list] _
+- [X] 5-6: _ [Bonus Project - To-do list] _
 - [X] 5-6: _[Bonus Project - Guess the Color]_
 - [ ] 5-6: _ [Bonus Project - Mysterious Letter] _
 
@@ -50,7 +50,7 @@ The program has more than 1,500 hours of face-to-face and online classrooms, add
 - [X] 6-1: _HTML & CSS - Forms_
 - [X] 6-2: _Javascript Libraries and CSS Frameworks_
 - [X] 6-3: _CSS Flexbox - Part 1_
-- [ ] 6-4: _CSS Flexbox - Part 2_
+- [X] 6-4: _CSS Flexbox - Part 2_
 - [ ] 6-5: _CSS Responsive - Mobile First_
 - [ ] 6-6: _ [Project - Facebook homepage] () _
 
