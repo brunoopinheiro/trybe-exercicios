@@ -49,7 +49,7 @@ The program has more than 1,500 hours of face-to-face and online classrooms, add
 
 - [X] 6-1: _HTML & CSS - Forms_
 - [X] 6-2: _Javascript Libraries and CSS Frameworks_
-- [ ] 6-3: _CSS Flexbox - Part 1_
+- [X] 6-3: _CSS Flexbox - Part 1_
 - [ ] 6-4: _CSS Flexbox - Part 2_
 - [ ] 6-5: _CSS Responsive - Mobile First_
 - [ ] 6-6: _ [Project - Facebook homepage] () _

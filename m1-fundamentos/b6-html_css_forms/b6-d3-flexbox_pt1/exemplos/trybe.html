@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trybe Flexbox</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    h1, h2 {
+      margin: 20px;
+    }
+
+    div {
+      width: 300px;
+      min-height: 70px;
+      border: 1px solid blue;
+      margin: 20px;
+    }
+
+    p {
+      background-color: red;
+      border: 2px solid black;
+      color: white;
+    }
+
+    .teste-inline-block p {
+      display: inline-block;
+      height: 50px;
+    }
+
+    .teste-inline p {
+      display: inline;
+    }
+
+    .teste-flex {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: flex-end;
+      align-content: space-between;
+    }
+
+    /* .p-dif {
+      height: 50px;
+    } */
+  </style>
+</head>
+<body>
+  <h1>Aprendendo Flexbox</h1>
+
+  <!-- display: block - O comportamento padrao da tag <p> e da tag <div> eh block -->
+  <h2>block</h2>
+  <div>
+    <p>Tamires Nunes</p>
+    <p>Lucas Ferraz</p>
+    <p>Gabriel Oliva</p>
+  </div>
+
+  <!-- display: inline -->
+  <h2>inline</h2>
+  <div class="teste-inline">
+    <p>Tamires Nunes</p>
+    <p>Lucas Ferraz</p>
+    <p>Gabriel Oliva</p>
+  </div>
+
+  <!-- display: inline-block -->
+  <div class="teste-inline-block">
+    <p>Tamires Nunes</p>
+    <p>Lucas Ferraz</p>
+    <p>Gabriel Oliva</p>
+  </div>
+
+  <!-- display: flex -->
+  <h2>flex</h2>
+  <div class="teste-flex">
+    <p class="p-dif">1 - Tamires Nunes</p>
+    <p>2 - Lucas Ferraz</p>
+    <p>3 - Gabriel Oliva</p>
+  </div>
+</body>
+</html>
