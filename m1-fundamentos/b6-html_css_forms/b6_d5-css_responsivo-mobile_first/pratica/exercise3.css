@@ -79,3 +79,14 @@ body {
   padding: 20px;
   height: 1%;
 }
+
+@media print {
+  #header, #navigation, #footer {
+    display: none;
+  }
+  #content-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
