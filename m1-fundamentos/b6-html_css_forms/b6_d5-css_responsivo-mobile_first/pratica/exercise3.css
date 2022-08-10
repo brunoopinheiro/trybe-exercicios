@@ -90,3 +90,41 @@ body {
   }
 }
 
+@media screen and (max-width: 767px) {
+  body {
+    padding: 0;
+  }
+
+  #header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 35px;
+  }
+
+  #navigation {
+    margin-top: 75px;
+  }
+
+  #navigation ul {
+    flex-direction: column;
+  }
+
+  #navigation li a {
+    border-right: none;
+    font-weight: 700;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  #aside {
+    display: none;
+  }
+
+  #content {
+    width: 85%;
+  }
+}
