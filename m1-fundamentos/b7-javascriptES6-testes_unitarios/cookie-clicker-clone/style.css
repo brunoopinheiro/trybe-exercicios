@@ -1,0 +1,53 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  background-color: burlywood;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  align-items: center;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+header h1 {
+  color: saddlebrown;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.cookie-container {
+  flex-direction: column;
+  width: 90%;
+  border: 2px solid saddlebrown;
+  border-radius: 20px;
+  padding: 2%;
+  text-align: right;
+  margin-top: 10%;
+}
+
+.cookie-container img {
+  width: 100%;
+  cursor: pointer;
+}
+
+#cookie-monster:hover{
+  transform: scale(1.03);
+}
+
+#cookie-monster:active{
+  transform: scale(.98);
+}
+
+.cookie-container p {
+  font-size: 26px;
+  color: saddlebrown;
+  font-weight: 700;
+}

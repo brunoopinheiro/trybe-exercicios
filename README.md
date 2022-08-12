@@ -52,11 +52,11 @@ The program has more than 1,500 hours of face-to-face and online classrooms, add
 - [X] 6-3: _CSS Flexbox - Part 1_
 - [X] 6-4: _CSS Flexbox - Part 2_
 - [X] 6-5: _CSS Responsive - Mobile First_
-- [ ] 6-6: _ [Project - Trybewarts] () _
+- [X] 6-6: _ [Project - Trybewarts] () _
 
 ##### Block 7: JavaScript ES6 & Unit Tests
 
-- [ ] 7-1: _JavaScript ES6 - let, const, arrow functions and template literals_
+- [X] 7-1: _JavaScript ES6 - let, const, arrow functions and template literals_
 - [ ] 7-2: _JavaScript ES6 - Objects_
 - [ ] 7-3: _Unit JavaScript Tests_
 - [ ] 7-4: _ [Project - JavaScript Unit Tests] () _
