@@ -57,8 +57,8 @@ The program has more than 1,500 hours of face-to-face and online classrooms, add
 ##### Block 7: JavaScript ES6 & Unit Tests
 
 - [X] 7-1: _JavaScript ES6 - let, const, arrow functions and template literals_
-- [ ] 7-2: _JavaScript ES6 - Objects_
-- [ ] 7-3: _Unit JavaScript Tests_
+- [X] 7-2: _JavaScript ES6 - Objects_
+- [X] 7-3: _Unit JavaScript Tests_
 - [ ] 7-4: _ [Project - JavaScript Unit Tests] () _
 
 ##### Block 8: JavaScript ES6
