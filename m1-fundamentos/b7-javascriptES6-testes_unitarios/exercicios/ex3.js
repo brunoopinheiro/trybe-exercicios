@@ -10,5 +10,5 @@
 
 const factorial = n => (n > 0 ? n * factorial(n - 1) : 1);
 
-const a = 4;
+const a = 150;
 console.log(`Esse e o fatorial de ${a}: ${factorial(a)} `);
