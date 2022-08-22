@@ -84,4 +84,6 @@ const getNamedBook = (data) => data.find((element) => element.name.length === 26
 // 4 ordene livros por data de lancamento decrescente
 const orderBooks = (data) => data.sort((a, b) => a.releaseYear - b.releaseYear);
 
+// 5 True se todas as pessoas nasceram no sec XX
+
 console.log(orderBooks(books));
