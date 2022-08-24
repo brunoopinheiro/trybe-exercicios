@@ -21,7 +21,7 @@ const totalSum = numbers2.reduce((acc, curr) => {
 
 console.log(`valor final: ${totalSum}`);
 
-// Exemplo 3 - from MDN Doc - How reduce() works without an initial value
+// Exemplo 3 - from MDN Doc
 const array = [15, 16, 17, 18, 19];
 
 function reducer(previousValue, currentValue, index) {
@@ -30,4 +30,5 @@ function reducer(previousValue, currentValue, index) {
   return returns;
 }
 
+array.reduce(reducer);
 array.reduce(reducer, 10);
