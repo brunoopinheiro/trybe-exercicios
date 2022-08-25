@@ -38,3 +38,10 @@ const shipLength = ({ name, length, measurementUnit }) => `${name} is ${length} 
 console.log(shipLength(ships[0]));
 console.log(shipLength(ships[1]));
 console.log(shipLength(ships[2]));
+
+// 8 - Funcao greet que dado o nome de uma pessoa retorna uma msg de cumprimento
+const greet = (person = 'Person', greet = 'Hi') => `${greet}, ${person}.`
+
+console.log(greet('John'));
+console.log(greet('John', 'Good morning'));
+console.log(greet('Isabella', 'Oi'));
