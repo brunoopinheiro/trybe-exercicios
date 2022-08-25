@@ -45,3 +45,15 @@ const greet = (person = 'Person', greet = 'Hi') => `${greet}, ${person}.`
 console.log(greet('John'));
 console.log(greet('John', 'Good morning'));
 console.log(greet('Isabella', 'Oi'));
+
+// 9 - Desestruturar objeto yearSeasons em um array com os meses do ano.
+const yearSeasons = {
+  spring: ['March', 'April', 'May'],
+  summer: ['June', 'July', 'August'],
+  autumn: ['September', 'October', 'November'],
+  winter: ['December', 'January', 'February'],
+};
+
+const getMonths = ({ spring, summer, autumn, winter }) => [...spring, ...summer, ... autumn, ...winter];
+
+console.log(getMonths(yearSeasons));
