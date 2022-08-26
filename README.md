@@ -63,11 +63,12 @@ The program has more than 1,500 hours of face-to-face and online classrooms, add
 
 ##### Block 8: JavaScript ES6
 
-- [X] 8-1: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
-- [X] 8-2: _JavaScript ES6 - Higher Order Functions - map and filter_
-- [X] 8-3: _JavaScript ES6 - Higher Order Functions - reduce_
-- [X] 8-4: _JavaScript ES6 - spread operator, rest parameter, destructuring and more_
-- [ ] 8-5: _ [Project - Zoo functions] () _
+- [X] 8-1: _JavaScript ES6 - Higher Order Functions - Introduction_
+- [X] 8-2: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
+- [X] 8-3: _JavaScript ES6 - Higher Order Functions - map and filter_
+- [X] 8-4: _JavaScript ES6 - Higher Order Functions - reduce_
+- [X] 8-5: _JavaScript ES6 - spread operator, rest parameter, destructuring and more_
+- [ ] 8-6: _ [Project - Zoo functions] () _
 
 ##### Block 9: Asynchrony & Callbacks
 
