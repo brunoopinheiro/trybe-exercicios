@@ -41,9 +41,9 @@ The program has more than 1,500 hours of face-to-face and online classrooms, add
 - [X] 5-4: _JavaScript - Web Storage_
 - [X] 5-5: _[Project - Art with Pixels] (100%)_
 - [X] 5-6: _[Bonus Project - Meme Generator] (100%)_
-- [X] 5-6: _ [Bonus Project - To-do list] (100%) _
+- [X] 5-6: _[Bonus Project - To-do list] (100%)_
 - [X] 5-6: _[Bonus Project - Guess the Color] (100%)_
-- [X] 5-6: _ [Bonus Project - Mysterious Letter] (100%)_
+- [X] 5-6: _[Bonus Project - Mysterious Letter] (100%)_
 
 ##### Block 6: Advanced HTML & CSS
 
@@ -52,14 +52,14 @@ The program has more than 1,500 hours of face-to-face and online classrooms, add
 - [X] 6-3: _CSS Flexbox - Part 1_
 - [X] 6-4: _CSS Flexbox - Part 2_
 - [X] 6-5: _CSS Responsive - Mobile First_
-- [X] 6-6: _ [Project - Trybewarts] _
+- [X] 6-6: _[Project - Trybewarts] (100%)_
 
 ##### Block 7: JavaScript ES6 & Unit Tests
 
 - [X] 7-1: _JavaScript ES6 - let, const, arrow functions and template literals_
 - [X] 7-2: _JavaScript ES6 - Objects_
 - [X] 7-3: _Unit JavaScript Tests_
-- [X] 7-4: _ [Project - JavaScript Unit Tests] (100%)_
+- [X] 7-4: _[Project - JavaScript Unit Tests] (100%)_
 
 ##### Block 8: JavaScript ES6
 
@@ -68,7 +68,7 @@ The program has more than 1,500 hours of face-to-face and online classrooms, add
 - [X] 8-3: _JavaScript ES6 - Higher Order Functions - map and filter_
 - [X] 8-4: _JavaScript ES6 - Higher Order Functions - reduce_
 - [X] 8-5: _JavaScript ES6 - spread operator, rest parameter, destructuring and more_
-- [ ] 8-6: _ [Project - Zoo functions] () _
+- [X] 8-6: _[Project - Zoo functions] (100%)_
 
 ##### Block 9: Asynchrony & Callbacks
 
