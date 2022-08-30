@@ -70,6 +70,8 @@ The program has more than 1,500 hours of face-to-face and online classrooms, add
 - [X] 8-5: _JavaScript ES6 - spread operator, rest parameter, destructuring and more_
 - [X] 8-6: _[Project - Zoo functions] (100%)_
 
+## Front-end development :hourglass_flowing_sand:
+
 ##### Block 9: Asynchrony & Callbacks
 
 - [ ] 9-1: _Synchronous JavaScript and Callbacks_
@@ -82,8 +84,6 @@ The program has more than 1,500 hours of face-to-face and online classrooms, add
 - [ ] 10-2: _Jest - Assynchronous Tests_
 - [ ] 10-3: _Jest - Simulating Behaviors_
 - [ ] 10-4: _ [Project - Jest Assembling and Mocking] () _
-
-## Front-end development :hourglass_flowing_sand:
 
 ##### Block 11: Introduction - React
 
