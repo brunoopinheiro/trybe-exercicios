@@ -11,13 +11,22 @@ const temperatureInFahrenheit = (temperature) => console.log(`The temperature in
 
 const greet = (temperature) => console.log(`Hi! Curiosity here. The temperature in Mars is ${temperature} celsius.`);
 
-const sendMarsTemperature = (callback) => {
-  const delay = messageDelay();
-  const temperature = getMarsTemperature();
-  setTimeout(() => {
-    callback(temperature);
-  }, delay);
+const handleError = (errorReason) => console.log(`Error getting temperature: ${errorReason}`);
+
+const sendMarsTemperature = (onSuccess, onFailure) => {
+  const isBusy = Math.random() >= 0.6;
+
+  if (isBusy){
+    const failure = 'Robot is busy'
+    onFailure(failure);
+  } else {
+    const delay = messageDelay();
+    const temperature = getMarsTemperature();
+    setTimeout(() => {
+      onSuccess(temperature);
+    }, delay);
+  }
 };
 
-sendMarsTemperature(temperatureInFahrenheit);
-sendMarsTemperature(greet);
+sendMarsTemperature(temperatureInFahrenheit, handleError);
+sendMarsTemperature(greet, handleError);
