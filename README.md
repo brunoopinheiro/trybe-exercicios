@@ -74,9 +74,10 @@ The program has more than 1,500 hours of face-to-face and online classrooms, add
 
 ##### Block 9: Asynchrony & Callbacks
 
-- [ ] 9-1: _Synchronous JavaScript and Callbacks_
-- [ ] 9-2: _JavaScript Promises_
-- [ ] 9-3: _ [Project - Shopping Cart] () _
+- [X] 9-1: _Synchronous JavaScript and Callbacks_
+- [X] 9-2: _JavaScript Fetch API & async/await_
+- [ ] 9-3: _JEST: Async tests_
+- [ ] 9-4: _ [Project - Shopping Cart] () _
 
 ##### Block 10: Jest
 
