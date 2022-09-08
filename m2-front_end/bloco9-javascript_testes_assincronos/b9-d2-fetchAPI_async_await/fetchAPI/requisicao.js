@@ -5,7 +5,7 @@ const getRandomAdvice = () => {
   const request = fetch(url)
     .then((response) => response.json())
     .then(({ slip: { id, advice } }) => console.log(advice))
-    .catch((error) => console.log(error));
+    .catch((error) => console.log('Ops, algo deu errado!', error.errno));
 };
 
 getRandomAdvice();
