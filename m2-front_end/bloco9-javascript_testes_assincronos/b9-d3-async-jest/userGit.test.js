@@ -26,4 +26,13 @@ describe('Test scripts.js', () => {
     await getUserInfo(VALID_USERNAME);
     expect(fetch).toHaveBeenCalledWith(VALID_URL);
   });
+
+  it('should return an error when called with an invalid user', async () => {
+    try{
+      await getUserInfo('INVALID_USERNAME');
+      expect(true).toBeFalsy();
+    } catch (error) {
+      expect(error).toEqual(new Error('Usuário inválido'));
+    }
+  });
 });
