@@ -6,17 +6,17 @@ const fetchCurrencies = async (moeda) => {
     const endpoint = `${URL_API}?base=${moeda}`;
     const response = await fetch(endpoint);
     const data = await response.json();
-    return data.rates;
+    return data;
   } catch (error) {
-
+    return error;
   }
 };
 
-fetchCurrencies('BRL')
-  .then(devolvido => console.log(devolvido));
+// fetchCurrencies('BRL')
+//   .then(devolvido => console.log(devolvido));
 
-// if (typeof module !== 'undefined') {
-//   module.exports = {
-//     fetchCurrencies,
-//   };
-// }
+if (typeof module !== 'undefined') {
+  module.exports = {
+    fetchCurrencies,
+  };
+}
