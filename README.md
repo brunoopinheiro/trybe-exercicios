@@ -77,20 +77,20 @@ The program has more than 1,500 hours of face-to-face and online classrooms, add
 - [X] 9-1: _Synchronous JavaScript and Callbacks_
 - [X] 9-2: _JavaScript Fetch API & async/await_
 - [X] 9-3: _JEST: Async tests_
-- [ ] 9-4: _ [Project - Shopping Cart] () _
+- [X] 9-4: _[Project - Shopping Cart] (100%)_
 
-##### Block 10: Jest
+##### Block 10: Introduction - React
+
+- [ ] 11-1: _'Hello, world! ' on React! _
+- [ ] 11-2: _React Components_
+- [ ] 11-3: _ [Project - Solar System] () _
+
+##### Block 11: Jest
 
 - [ ] 10-1: _First Steps in the Jest_
 - [ ] 10-2: _Jest - Assynchronous Tests_
 - [ ] 10-3: _Jest - Simulating Behaviors_
 - [ ] 10-4: _ [Project - Jest Assembling and Mocking] () _
-
-##### Block 11: Introduction - React
-
-- [ ] 11-1: _'Hello, world! ' no React! _
-- [ ] 11-2: _React Components_
-- [ ] 11-3: _ [Project - Movie Cards Library] () _
 
 ##### Block 12: React
 
