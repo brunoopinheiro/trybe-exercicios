@@ -2,6 +2,7 @@ import './App.css';
 import React from 'react';
 import Album from './components/Album';
 import UserProfile from './UserProfile';
+import Table from './Table';
 
 class App extends React.Component {
   render() {
@@ -47,12 +48,15 @@ class App extends React.Component {
       avatar: 'https://cdn.pixabay.com/photo/2017/01/31/13/05/cameo-2023867_640.png',
     };
 
+    const users = [joao, amelia];
+
     return (
       <div>
         <UserProfile user={ joao } />
         <Album album={ album01 } />
         <UserProfile user={ amelia } />
         <Album album={ album02 } />
+        <Table users={ users } />
       </div>
     );
   }
