@@ -81,8 +81,8 @@ The program has more than 1,500 hours of face-to-face and online classrooms, add
 
 ##### Block 10: Introduction - React
 
-- [ ] 11-1: _'Hello, world! ' on React! _
-- [ ] 11-2: _React Components_
+- [X] 11-1: _'Hello, world! ' on React! _
+- [X] 11-2: _React Components_
 - [ ] 11-3: _ [Project - Solar System] () _
 
 ##### Block 11: Jest
