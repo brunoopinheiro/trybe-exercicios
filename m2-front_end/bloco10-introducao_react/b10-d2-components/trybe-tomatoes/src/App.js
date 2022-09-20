@@ -1,10 +1,11 @@
 import React from 'react';
+import CardList from './components/CardList';
 
 class App extends React.Component {
   render() {
     return (
       <div className="App">
-        dale
+        <CardList className="Series__container" />
       </div>
     );
   }
