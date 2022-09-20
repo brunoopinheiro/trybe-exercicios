@@ -3,6 +3,7 @@ import React from 'react';
 import Album from './components/Album';
 import UserProfile from './UserProfile';
 import Table from './Table';
+import Order from './components/Order';
 
 class App extends React.Component {
   render() {
@@ -50,6 +51,29 @@ class App extends React.Component {
 
     const users = [joao, amelia];
 
+    const headphone = {
+      id: 103,
+      user: 'cena@gmail.com',
+      product: 'Razer Headphone',
+      price: {
+        value: 99.99,
+        currency: 'dollars'
+      }
+    };
+
+    const energyDrink = {
+      id: 104,
+      user: 'cena@gmail.com',
+      product: 'Monster 500mL',
+      price: {
+        value: 9.99,
+        currency: 'dollars',
+      }
+    };
+
+    const shoppingList = ['leite', 'arroz', 'feijao', 'banana', 'carne'];
+    const items = shoppingList.map((item, index) => (<li key={ index }>{ item }</li>));
+
     return (
       <div>
         <UserProfile user={ joao } />
@@ -57,6 +81,17 @@ class App extends React.Component {
         <UserProfile user={ amelia } />
         <Album album={ album02 } />
         <Table users={ users } />
+        <div>
+          <h1> Orders recently created </h1>
+          <Order order={ headphone } />
+          <Order order={ energyDrink } />
+        </div>
+        <div>
+          <h2>Lista de Compras</h2>
+          <ul>
+            { items }
+          </ul>
+        </div>
       </div>
     );
   }

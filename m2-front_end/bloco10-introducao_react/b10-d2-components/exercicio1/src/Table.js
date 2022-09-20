@@ -7,7 +7,7 @@ class Table extends Component {
     const { users } = this.props;
     return (
       users.map((user) => (
-        <div>
+        <div key={ user.id }>
           <UserName name={ user.name } />
           <UserOtherInfo email={ user.email } id={ user.id } />
         </div>
