@@ -85,18 +85,18 @@ The program has more than 1,500 hours of face-to-face and online classrooms, add
 - [X] 11-2: _React Components_
 - [X] 11-3: _[Project - Solar System](https://github.com/brunoopinheiro/solar-system-trybe-project8) (100%)_
 
-##### Block 11: Jest
+##### Block 11: React
 
-- [ ] 10-1: _First Steps in the Jest_
+- [X] 12-1: _Components with status and events_
+- [ ] 12-2: _Forms with React_
+- [ ] 12-3: _ [Project - Movie Cards Library Stateful] () _
+
+##### Block 12: Jest
+
+- [ ] 10-1: _First Steps in Jest_
 - [ ] 10-2: _Jest - Assynchronous Tests_
 - [ ] 10-3: _Jest - Simulating Behaviors_
 - [ ] 10-4: _ [Project - Jest Assembling and Mocking] () _
-
-##### Block 12: React
-
-- [ ] 12-1: _Components with status_
-- [ ] 12-2: _Events and Forms in the React_
-- [ ] 12-3: _ [Project - Movie Cards Library Stateful] () _
 
 ##### Block 13: React
 
