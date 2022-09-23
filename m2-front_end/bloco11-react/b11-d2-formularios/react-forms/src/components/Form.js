@@ -1,5 +1,6 @@
 import React from 'react';
 import './Form.css';
+import EstadoFavorito from './EstadoFavorito';
 
 class Form extends React.Component {
   constructor() {
@@ -32,14 +33,7 @@ class Form extends React.Component {
       <div>
         <h1>Estados e React: Ferramenta Incrivel ou Reagindo a Regionalismos?</h1>
         <form className="form">
-          <label>
-            Diga qual seu Estado favorito! Do Brasil ou do React, voce quem sabe!
-            <textarea
-              name="estadoFavorito"
-              value={ this.state.estadoFavorito }
-              onChange={ this.handleChange }
-            />
-          </label>
+          <EstadoFavorito value={ this.state.estadoFavorito } callback={ this.handleChange } />
 
           <label>
             Email
@@ -50,27 +44,27 @@ class Form extends React.Component {
             Nome
             <input type="text" name="nome" value={ this.state.name } onChange={ this.handleChange }/>
           </label>
+
+          <label>
+            Idade
+            <input type="number" name="idade" value={ this.state.idade } onChange={ this.handleChange }/>
+          </label>
+
+          <label>
+            Vai comparecer a conferencia?
+            <input type="checkbox" name="vaiComparecer" value={ this.state.vaiComparecer } onChange={ this.handleChange }/>
+          </label>
+
+          <label>
+            Escolha sua palavra chave favorita:
+            <select name="palavraChaveFavorita" value={ this.state.palavraChaveFavorita } onChange={ this.handleChange }>
+              <option value="estado">Estado</option>
+              <option value="evento">Evento</option>
+              <option value="props">Props</option>
+              <option value="hooks">Hooks</option>
+            </select>
+          </label>
         </form>
-
-        <label>
-          Idade
-          <input type="number" name="idade" value={ this.state.idade } onChange={ this.handleChange }/>
-        </label>
-
-        <label>
-          Vai comparecer a conferencia?
-          <input type="checkbox" name="vaiComparecer" value={ this.state.vaiComparecer } onChange={ this.handleChange }/>
-        </label>
-
-        <label>
-          Escolha sua palavra chave favorita:
-          <select name="palavraChaveFavorita" value={ this.state.palavraChaveFavorita } onChange={ this.handleChange }>
-            <option value="estado">Estado</option>
-            <option value="evento">Evento</option>
-            <option value="props">Props</option>
-            <option value="hooks">Hooks</option>
-          </select>
-        </label>
     </div>
     );
   }
