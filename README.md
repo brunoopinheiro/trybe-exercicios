@@ -81,33 +81,32 @@ The program has more than 1,500 hours of face-to-face and online classrooms, add
 
 ##### Block 10: Introduction - React
 
-- [X] 11-1: _'Hello, world! ' on React! _
-- [X] 11-2: _React Components_
-- [X] 11-3: _[Project - Solar System](https://github.com/brunoopinheiro/solar-system-trybe-project8) (100%)_
+- [X] 10-1: _'Hello, world! ' on React! _
+- [X] 10-2: _React Components_
+- [X] 10-3: _[Project - Solar System](https://github.com/brunoopinheiro/solar-system-trybe-project8) (100%)_
 
-##### Block 11: Jest
+##### Block 11: React
 
-- [ ] 10-1: _First Steps in the Jest_
-- [ ] 10-2: _Jest - Assynchronous Tests_
-- [ ] 10-3: _Jest - Simulating Behaviors_
-- [ ] 10-4: _ [Project - Jest Assembling and Mocking] () _
+- [X] 11-1: _Components with status and events_
+- [X] 11-2: _Forms with React_
+- [X] 11-3: _[Project - Tryunfo] (100%)_
 
 ##### Block 12: React
 
-- [ ] 12-1: _Components with status_
-- [ ] 12-2: _Events and Forms in the React_
-- [ ] 12-3: _ [Project - Movie Cards Library Stateful] () _
+- [ ] 12-1: _React Component Lifecycle_
+- [ ] 12-2: _React Router_
+- [ ] 12-3: _ [Project - TrybeTunes] () _
 
-##### Block 13: React
+##### Block 13: Jest
 
-- [ ] 13-1: _Improving component reuse: props.children and PropTypes_
-- [ ] 13-2: _React Component Lifecycle_
-- [ ] 13-3: _React Router_
-- [ ] 13-4: _ [Project - Movie Cards Library CRUD] () _
+- [ ] 13-1: _First Steps in Jest_
+- [ ] 13-2: _Jest - Assynchronous Tests_
+- [ ] 13-3: _Jest - Simulating Behaviors_
+- [ ] 13-4: _ [Project - Jest Assembling and Mocking] () _
 
-##### Block 14: Geological methodologies
+##### Block 14: Agile methodologies
 
-- [ ] 14-1: _Methodologies Ã geis_
+- [ ] 14-1: _Agile methodologies_
 - [ ] 14-2: _ [Project - Frontend Online Store] () _
 
 ##### Block 15: React Tests
