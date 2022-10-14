@@ -93,27 +93,27 @@ The program has more than 1,500 hours of face-to-face and online classrooms, add
 
 ##### Block 12: React
 
-- [ ] 12-1: _React Component Lifecycle_
-- [ ] 12-2: _React Router_
-- [ ] 12-3: _ [Project - TrybeTunes] () _
+- [X] 12-1: _React Component Lifecycle_
+- [X] 12-2: _React Router_
+- [X] 12-3: _[Project - TrybeTunes] (100%)_
 
-##### Block 13: Jest
+##### Block 13: Agile methodologies
 
-- [ ] 13-1: _First Steps in Jest_
-- [ ] 13-2: _Jest - Assynchronous Tests_
-- [ ] 13-3: _Jest - Simulating Behaviors_
-- [ ] 13-4: _ [Project - Jest Assembling and Mocking] () _
+- [X] 14-1: _Agile methodologies_
+- [X] 14-2: _[Project - Frontend Online Store] (100%)_
 
-##### Block 14: Agile methodologies
+##### Block 14: React Tests
 
-- [ ] 14-1: _Agile methodologies_
-- [ ] 14-2: _ [Project - Frontend Online Store] () _
+- [X] 14-1: _Testing React with React Testing Library_
+- [ ] 14-2: _Testing React with the React Testing Library - Part 2_
+- [ ] 14-3: _ [Project - React Tests] () _
 
-##### Block 15: React Tests
+##### Block 15: Jest
 
-- [ ] 15-1: _Testing React with React Testing Library_
-- [ ] 15-2: _Testing React with the React Testing Library - Part 2_
-- [ ] 15-3: _ [Project - React Tests] () _
+- [ ] 15-1: _First Steps in Jest_
+- [ ] 15-2: _Jest - Assynchronous Tests_
+- [ ] 15-3: _Jest - Simulating Behaviors_
+- [ ] 15-4: _ [Project - Jest Assembling and Mocking] () _
 
 ##### Block 16: Introduction to Redux
 
