@@ -105,35 +105,28 @@ The program has more than 1,500 hours of face-to-face and online classrooms, add
 ##### Block 14: React Tests
 
 - [X] 14-1: _Testing React with React Testing Library_
-- [ ] 14-2: _Testing React with the React Testing Library - Part 2_
-- [ ] 14-3: _ [Project - React Tests] () _
+- [X] 14-2: _Testing React with the React Testing Library - Part 2_
+- [X] 14-3: _[Project - React Tests] (100%)_
 
-##### Block 15: Jest
+##### Block 15: Introduction to Redux
 
-- [ ] 15-1: _First Steps in Jest_
-- [ ] 15-2: _Jest - Assynchronous Tests_
-- [ ] 15-3: _Jest - Simulating Behaviors_
-- [ ] 15-4: _ [Project - Jest Assembling and Mocking] () _
+- [ ] 15-1: _Introduction to Redux_
+- [ ] 15-2: _React with Redux - Part 1_
+- [ ] 15-3: _React with Redux - Practice_
+- [ ] 15-4: _React with Redux - Part 2_
+- [ ] 15-5: _Synchronous tests with React-Redux_
+- [ ] 15-6: _ [Project - Trybe Wallet] () _
 
-##### Block 16: Introduction to Redux
+##### Block 16: Project React
 
-- [ ] 16-1: _Introduction to Redux_
-- [ ] 16-2: _React with Redux - Part 1_
-- [ ] 16-3: _React with Redux - Practice_
-- [ ] 16-4: _React with Redux - Part 2_
-- [ ] 16-5: _Synchronous tests with React-Redux_
-- [ ] 16-6: _ [Project - Table with data filters] () _
+- [ ] 16-1: _ [Project - Trivia Game] () _
 
-##### Block 17: Project React
+##### Block 17: React & Context API
 
-- [ ] 17-1: _ [Project - Trivia Game] () _
-
-##### Block 18: React & Context API
-
-- [ ] 18-1: _React API Context_
-- [ ] 18-2: _React Hooks - useState and useContext_
-- [ ] 18-3: _React Hooks - useEffect and Custom Hooks_
-- [ ] 18-4: _ [Project - StarWars Datatable with Context API and Hooks] () _
+- [ ] 17-1: _React API Context_
+- [ ] 17-2: _React Hooks - useState and useContext_
+- [ ] 17-3: _React Hooks - useEffect and Custom Hooks_
+- [ ] 17-4: _ [Project - StarWars Datatable with Context API and Hooks] () _
 
 ##### Block 19: Final Front-end Project
 
