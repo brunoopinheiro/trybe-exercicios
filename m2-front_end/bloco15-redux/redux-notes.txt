@@ -1,0 +1,15 @@
+Redux pode ser dividido em 3 partes:
+  - actions, store e reducers
+  
+STORE:
+  Onde vamos armazenar todos os dados compartilhados da aplicação.
+  Representado por um objeto JavaScript
+  
+  O State é armazenado na Store do Redux.
+  
+ACTION:
+  É um objeto JavaScript que representa alguma mudança/alteração que precisa acontecer no state.
+  
+REDUCER:
+  É uma função JavaScript que recebe o estado atual (state) e a ação corrente (action) e retorna um novo estado (new state).
+  É responsabilidade dessa função decidir o que acontecerá com o estado de acordo com uma ação (action).
