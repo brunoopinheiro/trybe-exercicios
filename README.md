@@ -1,6 +1,6 @@
 # Trybe
 
-This repository contains all the learning activities developed by _[Bruno Pinheiro] (https://www.linkedin.com/in/brunoopinheirojr/)_ while studying at _[Trybe] (https://www.betrybe.com/)_ :rocket:
+This repository contains all the learning activities developed by _[Bruno Pinheiro](https://www.linkedin.com/in/brunoopinheirojr/)_ while studying at _[Trybe](https://www.betrybe.com/)_ :rocket:
 
 The program has more than 1,500 hours of face-to-face and online classrooms, addresses introduction to software development, front-end, back-end, computer science, software engineering, advanced methodologies and behavioral skills.
 
@@ -110,9 +110,9 @@ The program has more than 1,500 hours of face-to-face and online classrooms, add
 
 ##### Block 15: Introduction to Redux
 
-- [ ] 15-1: _Introduction to Redux_
-- [ ] 15-2: _React with Redux - Part 1_
-- [ ] 15-3: _React with Redux - Practice_
+- [X] 15-1: _Introduction to Redux_
+- [X] 15-2: _React with Redux - Part 1_
+- [X] 15-3: _React with Redux - Practice_
 - [ ] 15-4: _React with Redux - Part 2_
 - [ ] 15-5: _Synchronous tests with React-Redux_
 - [ ] 15-6: _ [Project - Trybe Wallet] () _
