@@ -113,8 +113,8 @@ The program has more than 1,500 hours of face-to-face and online classrooms, add
 - [X] 15-1: _Introduction to Redux_
 - [X] 15-2: _React with Redux - Part 1_
 - [X] 15-3: _React with Redux - Practice_
-- [ ] 15-4: _React with Redux - Part 2_
-- [ ] 15-5: _Synchronous tests with React-Redux_
+- [X] 15-4: _React with Redux - Part 2_
+- [X] 15-5: _Synchronous tests with React-Redux_
 - [ ] 15-6: _ [Project - Trybe Wallet] () _
 
 ##### Block 16: Project React
