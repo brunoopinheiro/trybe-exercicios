@@ -14,6 +14,7 @@ function requestCharacter() {
 
 export function fetchCharacter(charName) {
   return async (dispatch) => {
+    console.log(typeof dispatch);
     dispatch(requestCharacter());
     const URL = `https://anapioficeandfire.com/api/characters?name=${charName}`;
     const result = await fetch(URL);
