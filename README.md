@@ -115,22 +115,22 @@ The program has more than 1,500 hours of face-to-face and online classrooms, add
 - [X] 15-3: _React with Redux - Practice_
 - [X] 15-4: _React with Redux - Part 2_
 - [X] 15-5: _Synchronous tests with React-Redux_
-- [ ] 15-6: _ [Project - Trybe Wallet] () _
+- [X] 15-6: _[Project - Trybe Wallet] (100%)_
 
 ##### Block 16: Project React
 
-- [ ] 16-1: _ [Project - Trivia Game] () _
+- [X] 16-1: _[Project - Trivia Game] (100%)_
 
 ##### Block 17: React & Context API
 
-- [ ] 17-1: _React API Context_
-- [ ] 17-2: _React Hooks - useState and useContext_
-- [ ] 17-3: _React Hooks - useEffect and Custom Hooks_
-- [ ] 17-4: _ [Project - StarWars Datatable with Context API and Hooks] () _
+- [X] 17-1: _React Hooks - useState e useEffect_
+- [X] 17-2: _Context API_
+- [X] 17-3: _Custom Hooks_
+- [X] 17-4: _[Project - StarWars Datatable with Context API and Hooks](https://github.com/brunoopinheiro/starwars-table-trybe) (100%)_
 
 ##### Block 19: Final Front-end Project
 
-- [ ] 19-1: _ [Project - Recipe App] () _ 
+- [X] 19-1: _[Project - Recipe App](https://recipes-app-omega-vert.vercel.app/) (100%)_ 
 
 ## Back-end development :hourglass_flowing_sand:
 
