@@ -70,7 +70,7 @@ The program has more than 1,500 hours of face-to-face and online classrooms, add
 - [X] 8-5: _JavaScript ES6 - spread operator, rest parameter, destructuring and more_
 - [X] 8-6: _[Project - Zoo functions] (100%)_
 
-## Front-end development :hourglass_flowing_sand:
+## Front-end development :white_check_mark:
 
 ##### Block 9: Asynchrony & Callbacks
 
@@ -134,115 +134,23 @@ The program has more than 1,500 hours of face-to-face and online classrooms, add
 
 ## Back-end development :hourglass_flowing_sand:
 
-##### Block 20: Introduction - Relational databases
+##### Block 20: Docker - Using Containers
 
-- [ ] 20-1: _SQL Database_
-- [ ] 20-2: _Finding data in a database_
-- [ ] 20-3: _Specifically filtering data_
-- [ ] 20-4: _Manipulating tables_
-- [ ] 20-5: _ [Project - All For One] () _
+- [X] 20-1: _Using Docker Containers_
+- [X] 20-2: _Docker Images_
+- [ ] 20-3: _Docker Compose_
+- [ ] 20-4: _ [Project - Docker Todo-List] ()_
 
-##### Block 21: Relational databases
+##### Block 21: Introduction - Relational Databases
 
-- [ ] 21-1: _Most used functions in SQL_
-- [ ] 21-2: _Uncomplicating JOINs and UNIONs_
-- [ ] 21-3: _Stored Routines & Subqueries_
-- [ ] 21-4: _ [Project - Vocabulary Booster] () _
+- [ ] 21-1: _SQL Database_
+- [ ] 21-2: _Finding data in a database_
+- [ ] 21-3: _Specifically filtering data_
+- [ ] 21-4: _Manipulating tables_
+- [ ] 21-5: _ [Project - All for One] () _
 
-##### Block 22: Relational databases
-
-- [ ] 22-1: _Transforming ideas into a data bank model_
-- [ ] 22-2: _Normalization, Normal Shapes and Dumps_
-- [ ] 22-2: _Transforming ideas into a data bank model - Part 2_
-- [ ] 22-3: _ [Project - One For All] () _
-
-##### Block 23: Introduction - NoSQL
-
-- [ ] 23-1: _MongoDB - Introduction_
-- [ ] 23-2: _Filter Operators_
-- [ ] 23-3: _ [Project - Data Flights] () _
-
-##### Block 24: Updates
-
-- [ ] 24-1: _Updates Simples_
-- [ ] 24-2: _Updates Complexes - Arrays - Part 1_
-- [ ] 24-3: _Updates Complexes - Arrays - Part 2_
-- [ ] 24-4: _ [Project - Commerce] () _
-
-##### Block 25: Aggregation Framework
-
-- [ ] 25-1: _Aggregation Framework - Part 1_
-- [ ] 25-2: _Aggregation Framework - Part 2_
-- [ ] 25-3: _ [Project - Aggregations] () _
-
-##### Block 26: Intro - NodeJS
-
-- [ ] 26-1: _NodeJS - Introduction_
-- [ ] 26-2: _NodeJS - Asynchronous Flow_
-- [ ] 26-3: _NodeJS - Architecture_
-- [ ] 26-4: _ [Project - A CLI of Ice and Fire] () _
-
-##### Block 27: NodeJS
-
-- [ ] 27-1: _Express: HTTP as Node.js_
-- [ ] 27-2: _Software Architecture - Introduction to MVC_
-- [ ] 27-3: _ [Project - Cookmaster] () _
-
-##### Block 28: NodeJS
-
-- [ ] 28-1: _Software Architecture - Service Layer_
-- [ ] 28-2: _Web Architecture - Rest and Restful_
-- [ ] 28-3: _ [Project - Store Manager] () _
-
-##### Block 29: NodeJS
-
-- [ ] 29-1: _NodeJS - JWT - (JSON Web Token) _
-- [ ] 29-2: _NodeJS - Upload Files with Multer_
-- [ ] 29-3: _ [Project - Cookmaster V2] () _
-
-##### Block 30: Introduction - Deploy
-
-- [ ] 30-1: _Infrastructure - Deploy with Heroku_
-- [ ] 30-2: _Deploy - Process Managers_
-- [ ] 30-3: _ [Project - Stranger Things] () _
-
-##### Block 31: Project
-
-- [ ] 31-1: _ [Project - Trybeer] () _
-
-##### Block 32: Software Architecture
-
-- [ ] 32-1: _Architecture - SOLID Principles_
-- [ ] 32-2: _ORM - Application Interface with Data Bank_
-- [ ] 32-3: _Software Architecture - DDD_
-- [ ] 32-4: _Good writing practice_
-- [ ] 32-3: _ [Project - Blog API] () _
-
-##### Block 33: Sockets
-
-- [ ] 30-1: _Sockets - TCP / UDP & NET_
-- [ ] 30-2: _Sockets - Socket.io_
-- [ ] 30-3: _ [Project - Webchat] () _
-
-##### Block 34: Project
-
-- [ ] 34-1: _ [Project - Trybeer V2] () _
+...
 
 ## Computer Science :hourglass_flowing_sand:
-
-##### Block 35: Introduction - Computer Science
-
-- [ ] 35-1: _Computer Architecture_
-- [ ] 35-2: _Network Architecture_
-- [ ] 35-3: _Computer Networks, Tools, and Security_
-- [ ] 35-4: _ [Project - Exploring Protocols] () _
-
-##### Block 36: Python
-
-- [ ] 35-1: _Learning Python_
-- [ ] 35-2: _Tests and Exceptions_
-- [ ] 35-3: _Dice Input and Output_
-- [ ] 36-4: _Dice Input and Output_
-- [ ] 35-5: _ [Project - Tech news] () _
 
 # [...]
