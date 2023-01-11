@@ -1,5 +1,5 @@
 # Primeiro Estagio
-FROM nginx:1.21-alpine AS primeiro-estagio
+FROM alpine:3.14 AS primeiro-estagio
 WORKDIR /site
 
 COPY config.toml config.toml
