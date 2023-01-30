@@ -1,4 +1,5 @@
 // imc = peso / altura^2
+const resync = require('readline-sync');
 
 function bmi(weight, height) {
   try {
@@ -8,6 +9,14 @@ function bmi(weight, height) {
   }
 };
 
-console.log(bmi(80, 1.66));
+function main() {
+  const weight = resync.questionInt('Enter your weight (kg): ');
+  const height = resync.questionInt('Enter your height (m): ');
+  const bmiResult = bmi(weight, height);
+
+  console.log(`BMI: ${bmiResult}`);
+}
+
+main();
 
 module.exports = { bmi };
