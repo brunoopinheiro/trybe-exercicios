@@ -138,16 +138,23 @@ The program has more than 1,500 hours of face-to-face and online classrooms, add
 
 - [X] 20-1: _Using Docker Containers_
 - [X] 20-2: _Docker Images_
-- [ ] 20-3: _Docker Compose_
-- [ ] 20-4: _ [Project - Docker Todo-List] ()_
+- [X] 20-3: _Docker Compose_
+- [X] 20-4: _[Project - Docker Todo-List] (100%)_
 
 ##### Block 21: Introduction - Relational Databases
 
-- [ ] 21-1: _SQL Database_
-- [ ] 21-2: _Finding data in a database_
-- [ ] 21-3: _Specifically filtering data_
-- [ ] 21-4: _Manipulating tables_
-- [ ] 21-5: _ [Project - All for One] () _
+- [X] 21-1: _SQL Database_
+- [X] 21-2: _Finding data in a database_
+- [X] 21-3: _Specifically filtering data_
+- [X] 21-4: _Manipulating tables_
+- [X] 21-5: _[Project - All for One] (100%)_
+
+##### Block 22: SQL Functions, JOINs and Database Normalization
+
+- [X] 22-1: _SQL Functions_
+- [X] 22-2: _JOINs_
+- [X] 22-3: _Making ideas into a database model_
+- [X] 22-4: _[Project - One for All] (100%)_
 
 ...
 
