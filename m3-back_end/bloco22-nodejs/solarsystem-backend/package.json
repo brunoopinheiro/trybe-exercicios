@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "eslint-config-trybe-backend": "^2.1.0",
+    "readline-sync": "^1.4.10"
+  }
 }
