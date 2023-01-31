@@ -10,13 +10,6 @@ async function main() {
   const newMission = { name, year, country, destination };
   writeNewMissionData(newMission);
   console.log('Nova missao registrada com sucesso.');
-  // writeNewMissionData({
-  //   "id": 100,
-  //   "name": "Tryber 1",
-  //   "year": "2019",
-  //   "country": "Brasil",
-  //   "destination": "Marte"
-  // });
 }
 
 main();
