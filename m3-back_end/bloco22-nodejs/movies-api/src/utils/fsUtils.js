@@ -1,7 +1,7 @@
 const fs = require('fs').promises;
 const path = require('path');
 
-const MOVIES_DATA_PATH = '../src/movies.json';
+const MOVIES_DATA_PATH = '../movies.json';
 
 async function readMoviesData() {
   try {
