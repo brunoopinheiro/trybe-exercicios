@@ -5,6 +5,12 @@ const app = express();
 
 app.use(express.json());
 
+app.get('/movies', async (_req, res) => {
+  const allMovies = await readMoviesData();
+
+  return res.status(200).json({ movies: allMovies });
+});
+
 app.get('/movies/:id', async (req, res) => {
   const { id } = req.params;
   
