@@ -5,6 +5,23 @@ const app = express();
 
 app.use(express.json());
 
+app.get('/movies/search', async (req, res) => {
+  try {
+    const { q } = req.query;
+    const allMovies = await readMoviesData();
+
+    if (q) {
+      const filteredMovies = allMovies.filter((m) => m.movie.includes(q));
+
+      return res.status(200).json(filteredMovies);
+    }
+
+    return res.status(200).end();
+  } catch (error) {
+    res.status(500).send({ message: error.message });
+  }
+})
+
 app.get('/movies', async (_req, res) => {
   const allMovies = await readMoviesData();
 
