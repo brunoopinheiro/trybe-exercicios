@@ -1,5 +1,5 @@
 const express = require('express');
-const { readMoviesData } = require('./utils/fsUtils');
+const { readMoviesData, writeNewMovieData, updateMovieData, deleteMovieData } = require('./utils/fsUtils');
 
 const app = express();
 
@@ -20,6 +20,31 @@ app.get('/movies/:id', async (req, res) => {
   if (!requestedMovie) return res.status(404).json({ message: 'Movie not found' });
 
   return res.status(200).json({ movie: requestedMovie });
+});
+
+app.post('/movies', async (req, res) => {
+  const newMovie = req.body;
+
+  const newMovieObj = await writeNewMovieData(newMovie);
+
+  return res.status(201).json({ movie: newMovieObj });
+});
+
+app.put('/movies/:id', async (req, res) => {
+  const { id } = req.params;
+  const newMovieData = req.body;
+
+  const updatedMovie = await updateMovieData(Number(id), newMovieData);
+
+  return res.status(201).json({ movie: updatedMovie });
+});
+
+app.delete('/movies/:id', async (req, res) => {
+  const { id } = req.params;
+
+  await deleteMovieData(Number(id));
+
+  return res.status(204).end();
 });
 
 module.exports = app;
