@@ -54,10 +54,22 @@ const updateChocolate = async (id, update) => {
   return { chocolate: newChocolate };
 }
 
+const createChocolate = async (name, brandId) => {
+  const cacauTrybe = await readCacauTrybeFile();
+  const newChocolate = { id: cacauTrybe.nextChocolateId, name, brandId };
+  
+  cacauTrybe.chocolates.push(newChocolate);
+  cacauTrybe.nextChocolateId += 1;
+  await writeCacauTrybeFile(cacauTrybe);
+
+  return newChocolate;
+}
+
 module.exports = {
   getAllChocolates,
   getChocolateById,
   getChocolatesByBrand,
   findChocolateByName,
   updateChocolate,
+  createChocolate,
 };

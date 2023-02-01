@@ -9,6 +9,13 @@ app.get('/chocolates', async (req, res) => {
   res.status(200).json({ chocolates });
 });
 
+app.post('/chocolates', async (req, res) => {
+  const { name, brandId } = req.body;
+  const newChocolate = await cacauTrybe.createChocolate(name, brandId);
+
+  res.status(201).json(newChocolate);
+});
+
 app.get('/chocolates/total', async (_req, res) => {
   const chocolates = await cacauTrybe.getAllChocolates();
 

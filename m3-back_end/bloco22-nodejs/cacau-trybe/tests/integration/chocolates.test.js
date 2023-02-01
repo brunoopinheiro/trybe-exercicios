@@ -43,13 +43,16 @@ const mockFile = JSON.stringify({
           "name": "Mounds",
           "brandId": 3
       }
-  ]
+  ],
+  nextChocolateId: 5,
 });
 
 describe('Testando a API Cacau Trybe', function () {
   beforeEach(function () {
     sinon.stub(fs.promises, 'readFile')
       .resolves(mockFile);
+
+    sinon.stub(fs.promises, 'writeFile').resolves();
   });
 
   afterEach(function () {
@@ -154,7 +157,7 @@ describe('Testando a API Cacau Trybe', function () {
 
   describe('Usando PUT em /chocolates/:id', function () {
     beforeEach(function () {
-      sinon.stub(fs.promises, 'writeFile').resolves();
+      
     });
 
     it.skip('Atualiza um chocolate existente', async function () {
@@ -188,6 +191,28 @@ describe('Testando a API Cacau Trybe', function () {
       expect(response.body).to.deep.equal({
         message: 'chocolate not found',
       });
+    });
+  });
+
+  describe('Usando POST em /chocolates para criar novo', function () {
+    // TRIPLE A (AAA)
+    // A - Arrange
+    // A - Act
+    // A - Assert
+
+    const requestBody = {
+      name: 'Trybe Chocolate',
+      brandId: 1,
+    };
+
+    it('Criar um chocolate Trybe', async function () {
+      const response = await chai
+        .request(app)
+        .post('/chocolates')
+        .send(requestBody);
+      
+      expect(response.status).to.be.equal(201);
+      expect(response.body).to.deep.equal({ id: 5, ...requestBody });
     });
   });
 // End of outer describe
