@@ -3,6 +3,7 @@ const chaiHttp = require('chai-http');
 
 chai.use(chaiHttp);
 const { expect } = chai;
+const app = require('../../src/app');
 
 describe('Testando a API Cacau Trybe', function () {
   describe('Usando o método GET em /chocolates', function () {
