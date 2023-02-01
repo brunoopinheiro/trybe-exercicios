@@ -1,0 +1,16 @@
+{
+  "name": "cacau-trybe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/**/*.test.js --exit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "4.3.4",
+    "mocha": "8.4.0"
+  }
+}
