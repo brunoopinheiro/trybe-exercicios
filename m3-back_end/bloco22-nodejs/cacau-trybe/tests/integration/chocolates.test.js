@@ -115,4 +115,13 @@ describe('Testando a API Cacau Trybe', function () {
       ]);
     });
   });
+
+  describe('Usando o método GET na rota /chocolates/total', function () {
+    it('Deve retornar o total de chocolates', async function () {
+      const response = await chai.request(app).get('/chocolates/total');
+
+      expect(response.status).to.be.equal(200);
+      expect(response.body).to.deep.equal({ totalChocolates: 4 });
+    } );
+  });
 });
