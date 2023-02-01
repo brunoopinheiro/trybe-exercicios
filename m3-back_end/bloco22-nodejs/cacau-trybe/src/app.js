@@ -35,4 +35,13 @@ app.get('/chocolates/:id', async (req, res) => {
   res.status(200).json({ chocolate });
 });
 
+app.put('/chocolates/:id', async (req, res) => {
+  const { id } = req.params;
+  const { name, brandId } = req.body;
+  const updatedChocolate = await cacauTrybe.updateChocolate(Number(id), { name, brandId });
+
+  if (updatedChocolate) return res.status(200).json({ chocolate: updatedChocolate });
+  res.status(404).json({ message: 'chocolate not found' });
+});
+
 module.exports = app;

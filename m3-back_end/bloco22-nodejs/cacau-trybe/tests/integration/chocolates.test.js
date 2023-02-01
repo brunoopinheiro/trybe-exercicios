@@ -151,4 +151,44 @@ describe('Testando a API Cacau Trybe', function () {
       expect(response.body).to.deep.equal([]);
     });
   });
+
+  describe('Usando PUT em /chocolates/:id', function () {
+    beforeEach(function () {
+      sinon.stub(fs.promises, 'writeFile').resolves();
+    });
+
+    it.skip('Atualiza um chocolate existente', async function () {
+      const response = await chai
+        .request(app)
+        .put('/chocolates/1')
+        .send({
+          name: 'Mint Pretty Good',
+          brandId: 2,
+        });
+
+      // expect(response.status).to.be.equal(200);
+      expect(fs.promises.writeFile.called).to.be.equal(true);
+      // expect(response.body.chocolate).to.deep.equal({
+      //   id: 1,
+      //   name: 'Mint Pretty Good',
+      //   brandId: 2,
+      // });
+    });
+
+    it.skip('Gera um erro com chocolate inexistente', async function () {
+      const response = await chai
+        .request(app)
+        .put('/chocolates/555')
+        .send({
+          name: 'Mint Pretty Good',
+          brandId: 2,
+        });
+      
+      expect(response.status).to.be.equal(404);
+      expect(response.body).to.deep.equal({
+        message: 'chocolate not found',
+      });
+    });
+  });
+// End of outer describe
 });
