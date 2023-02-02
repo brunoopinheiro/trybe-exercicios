@@ -1,31 +1,12 @@
 const express = require('express');
+const validateTeam = require('./middlewares/validateTeam');
+const existingId = require('./middlewares/existingId');
 
 let nextId = 3;
-const teams = [
-  {
-    id: 1,
-    name: 'São Paulo Futebol Clube',
-    initials: 'SPF',
-  },
-  {
-    id: 2,
-    name: 'Clube Atlético Mineiro',
-    initials: 'CAM',
-  },
-];
+const teams = require('./data/teams');
 
 const app = express();
 app.use(express.json());
-
-// Middlewares
-const validateTeam = (req, res, next) => {
-  const requiredProperties = ['nome', 'sigla'];
-  if (requiredProperties.every((property) => property in req.body)) {
-    next();
-  } else {
-    res.sendStatus(400);
-  }
-};
 
 // Routes
 
@@ -33,7 +14,7 @@ const validateTeam = (req, res, next) => {
 
 app.get('/teams', (_req, res) => res.json({ teams }));
 
-app.get('/teams/:id', (req, res) => {
+app.get('/teams/:id', existingId, (req, res) => {
   const id = Number(req.params.id);
   
   const team = teams.find((t) => t.id === id);
@@ -52,7 +33,7 @@ app.post('/teams', validateTeam, (req, res) => {
   res.status(201).json(team);
 });
 
-app.put('/teams/:id', validateTeam, (req, res) => {
+app.put('/teams/:id', existingId, validateTeam, (req, res) => {
   const id = Number(req.params.id);
   const team = teams.find((t) => t.id === id);
   if (team) {
@@ -65,7 +46,7 @@ app.put('/teams/:id', validateTeam, (req, res) => {
   }
 });
 
-app.delete('/teams/:id', (req, res) => {
+app.delete('/teams/:id', existingId, (req, res) => {
   const id = Number(req.params.id);
   const team = teams.find((t) => t.id === id);
   if (team) {
