@@ -8,9 +8,9 @@ const app = express();
 app.use(morgan('dev'));
 app.use(cors());
 app.use(express.json());
-app.use('/teams', teamsRouter);
 
 // Routes
+app.use('/teams', teamsRouter);
 
 app.use((err, _req, _res, next) => {
   console.error(err.stack);
