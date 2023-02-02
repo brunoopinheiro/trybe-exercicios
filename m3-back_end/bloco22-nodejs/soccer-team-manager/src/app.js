@@ -1,5 +1,6 @@
 const express = require('express');
 require('express-async-errors');
+const morgan = require('morgan');
 const validateTeam = require('./middlewares/validateTeam');
 const existingId = require('./middlewares/existingId');
 const apiCredentials = require('./middlewares/apiCredentials');
@@ -8,6 +9,7 @@ let nextId = 3;
 const teams = require('./data/teams');
 
 const app = express();
+app.use(morgan('dev'));
 app.use(express.json());
 app.use(apiCredentials);
 
@@ -30,6 +32,15 @@ app.get('/teams/:id', existingId, (req, res) => {
 });
 
 app.post('/teams', validateTeam, (req, res) => {
+  if (
+    // confere se a sigla proposta esta inclusa nos times autorizados
+    !req.teams.teams.includes(req.body.sigla)
+    // confere se ja nao existe um time com essa sigla
+    || !teams.every((t) => t.sigla !== req.body.sigla)
+  ) {
+    return res.status(422).json({ message: 'Já existe um time com essa sigla' });
+  }
+
   const team = { id: nextId, ...req.body };
   teams.push(team);
   nextId += 1;

@@ -9,7 +9,7 @@ const existingId = (req, res, next) => {
   if (validTeam) {
     next();
   } else {
-    res.sendStatus(400);
+    res.status(404).json({ message: 'Time não encontrado' });
   }
 };
 
