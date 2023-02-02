@@ -1,12 +1,15 @@
 const express = require('express');
+require('express-async-errors');
 const validateTeam = require('./middlewares/validateTeam');
 const existingId = require('./middlewares/existingId');
+const apiCredentials = require('./middlewares/apiCredentials');
 
 let nextId = 3;
 const teams = require('./data/teams');
 
 const app = express();
 app.use(express.json());
+app.use(apiCredentials);
 
 // Routes
 
