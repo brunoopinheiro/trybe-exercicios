@@ -1,17 +1,17 @@
 const chai = require('chai');
 const chatHttp = require('chai-http');
 const sinon = require('sinon');
-const fs = require('fs');
 const app = require('../../src/app');
+const connection = require('../../src/db/connection');
 
 const { expect } = chai;
 chai.use(chatHttp);
 
-const mockMissions = JSON.stringify([
+const mockMissions = [
   { id: 1, name: 'Mariner 2', year: '1962', country: 'EUA', destination: 'Vênus' },
   { id: 2, name: 'Venera 4', year: '1967', country: 'URSS', destination: 'Vênus' },
   { id: 3, name: 'Mariner 5', year: '1967', country: 'EUA', destination: 'Vênus' },
-]);
+];
 
 const mockMission = {
   name: 'Trybe',
@@ -27,7 +27,7 @@ describe('Rota de missões', function () {
 
   describe('GET /missions', function () {
     it('Returns a missions list', async function () {
-      sinon.stub(fs.promises, 'readFile').resolves(mockMissions);
+      sinon.stub(connection, 'execute').resolves([mockMissions]);
 
       const response = await chai.request(app).get('/missions');
 
@@ -40,7 +40,13 @@ describe('Rota de missões', function () {
 
   describe('POST /missions', function () {
     beforeEach(function () {
-      sinon.stub(fs.promises, 'writeFile').resolves();
+      const mockId = 42;
+
+      sinon.stub(connection, 'execute')
+        .onFirstCall()
+        .resolves([{ insertId: mockId }])
+        .onSecondCall()
+        .resolves([{ id: mockId, ...mockMission }]);
     });
 
     it('Retorna a missão criada com um id', async function () {
@@ -55,9 +61,9 @@ describe('Rota de missões', function () {
       expect(response.body.mission.destination).to.equal(mockMission.destination);
     });
 
-    it('Escreve a nova missao no arquivo de missoes', async function () {
+    it('Escreve a nova missao no banco de dados', async function () {
       await chai.request(app).post('/missions').send(mockMission);
-      expect(fs.promises.writeFile.called).to.be.equal(true);
+      expect(connection.execute.calledTwice).to.be.equal(true);
     });
   });
 });
