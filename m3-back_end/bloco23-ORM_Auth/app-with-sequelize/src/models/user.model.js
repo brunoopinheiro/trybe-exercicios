@@ -2,6 +2,7 @@ const UserModel = (sequelize, DataTypes) => {
   const User = sequelize.define('User', {
     fullName: DataTypes.STRING,
     email: DataTypes.STRING,
+    phoneNum: DataTypes.STRING,
   });
   (async () => {
     // sync method is being called. This means that everytime the server is initialized, the table will be recreated.
