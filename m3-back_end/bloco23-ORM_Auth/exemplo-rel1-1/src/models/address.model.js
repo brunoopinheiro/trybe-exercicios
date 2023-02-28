@@ -1,3 +1,8 @@
+/**
+* @param {import('sequelize').Sequelize} sequelize
+* @param {import('sequelize').DataTypes} DataTypes
+*/
+
 module.exports = (sequelize, DataTypes) => {
   const Address = sequelize.define('Address', {
     id: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
