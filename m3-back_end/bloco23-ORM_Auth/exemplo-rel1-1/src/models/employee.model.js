@@ -7,12 +7,12 @@ module.exports = (sequelize, DataTypes) => {
   },
   {
     timestamps: false, // Remove a obrigatoriedade de utilizar os campos 'createdAt' e 'updatedAt'
-    tableName: 'employees',
+    tableName: 'employee',
     underscored: true,
   });
 
   Employee.associate = (models) => {
-    Employee.hasOne(models.Address, 
+    Employee.hasMany(models.Address, 
       { foreignKey: 'employeeId', as: 'addresses' });
   };
 

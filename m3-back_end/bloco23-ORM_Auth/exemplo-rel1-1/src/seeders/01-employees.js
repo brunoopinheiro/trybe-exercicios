@@ -24,6 +24,11 @@ module.exports = {
         last_name: 'Mathias',
         age: 63,
       },
+      {
+        first_name: 'Antonio',
+        last_name: 'Augusto',
+        age: 18,
+      },
     ], {});
   },
 
