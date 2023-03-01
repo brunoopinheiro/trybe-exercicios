@@ -28,9 +28,38 @@ const getById = async (id) => {
   return employee;
 };
 
+// // Codigo referente a uma UNMANAGED TRANSACTION
+// const insert = async ({ firstName, lastName, age, city, street, number }) => {
+//   const t = await sequelize.transaction();
+//   try {
+//     const employee = await Employee.create(
+//       { firstName, lastName, age },
+//       { transaction: t },
+//     );
+
+//     await Address.create(
+//       { city, street, number, employeeId: employee.id },
+//       { transaction: t },
+//     );
+
+//     // Se chegou ate essa linha, quer dizer que nenhum erro ocorreu
+//     // Com isso, podemos finalizar a transacao usando a funcao commit
+//     await t.commit();
+//     return employee;
+//   } catch (e) {
+//     // Se entrou nesse bloco e porque alguma operacao falhou
+//     // Nesse caso, o sequelize ira reverter as operacoes anteriores com a funcao rollback
+//     await t.rollback();
+//     console.log(e);
+//     throw e; // Jogamos o erro para o controller tratar
+//   }
+// };
+
+// Codigo referente a uma MANAGED TRANSACTION
 const insert = async ({ firstName, lastName, age, city, street, number }) => {
-  const t = await sequelize.transaction();
-  try {
+  // Como a managed transaction e gerenciada, nao precisamos envolve-la com try/cath,
+  // Pois o Sequelize faz o Rollback automaticamente.
+  const result = await sequelize.transaction(async (t) => {
     const employee = await Employee.create(
       { firstName, lastName, age },
       { transaction: t },
@@ -41,17 +70,13 @@ const insert = async ({ firstName, lastName, age, city, street, number }) => {
       { transaction: t },
     );
 
-    // Se chegou ate essa linha, quer dizer que nenhum erro ocorreu
-    // Com isso, podemos finalizar a transacao usando a funcao commit
-    await t.commit();
     return employee;
-  } catch (e) {
-    // Se entrou nesse bloco e porque alguma operacao falhou
-    // Nesse caso, o sequelize ira reverter as operacoes anteriores com a funcao rollback
-    await t.rollback();
-    console.log(e);
-    throw e; // Jogamos o erro para o controller tratar
-  }
+  });
+
+  return result;
+  // Se chegou ate aqui e porque as alteracoes foram concluidas com sucesso,
+  // nao sendo necessario finalizar a transacao manualmente.
+  // `result` tera o resultado da transacao, no caso um empregado e o endereco cadastrado
 };
 
 module.exports = {
