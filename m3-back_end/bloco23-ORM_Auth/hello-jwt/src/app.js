@@ -27,6 +27,8 @@ app.get(
   middlewares.admin,
   controllers.topSecret,
 );
+app.post('/signup', controllers.signup);
+
 app.use(middlewares.error);
 
 module.exports = app;
