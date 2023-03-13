@@ -20,8 +20,10 @@
   },
   "dependencies": {
     "@types/restify-errors": "4.3",
+    "dotenv": "10.0",
     "express": "4.17",
     "express-async-errors": "3.1",
+    "mysql2": "2.3",
     "restify-errors": "8.0"
   }
 }
