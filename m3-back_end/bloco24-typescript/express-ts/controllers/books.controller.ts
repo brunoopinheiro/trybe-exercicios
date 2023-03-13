@@ -8,7 +8,7 @@ class BooksController {
   public getAll = async (_req: Request, res: Response): Promise<Response> => {
     const books = await this.bookService.getAll();
     return res.status(statusCodes.OK).json(books);
-  }
+  };
 
   public getById = async (req: Request, res: Response) => {
     const id = parseInt(req.params.id, 10);
@@ -19,14 +19,22 @@ class BooksController {
     }
 
     return res.status(statusCodes.OK).json(book);
-  }
+  };
 
   public create = async (req: Request, res: Response): Promise<Response> => {
     const book = req.body;
 
     const bookCreated = await this.bookService.create(book);
     return res.status(statusCodes.CREATED).json(bookCreated);
-  }
+  };
+
+  public update = async (req: Request, res: Response): Promise<Response> => {
+    const id = Number(req.params.id);
+    const book = req.body;
+    await this.bookService.update(id, book);
+
+    return res.status(statusCodes.NO_CONTENT).end();
+  };
 }
 
 export default BooksController;
