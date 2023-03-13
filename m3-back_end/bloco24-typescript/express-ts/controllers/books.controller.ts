@@ -20,6 +20,13 @@ class BooksController {
 
     return res.status(statusCodes.OK).json(book);
   }
+
+  public create = async (req: Request, res: Response): Promise<Response> => {
+    const book = req.body;
+
+    const bookCreated = await this.bookService.create(book);
+    return res.status(statusCodes.CREATED).json(bookCreated);
+  }
 }
 
 export default BooksController;
