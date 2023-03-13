@@ -1,0 +1,23 @@
+{
+  "name": "sequelize-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:reset": "npx -y tsc && npx sequelize-cli db:drop && npc sequelize-cli db:create && npx sequelize-cli db:migrate && npc sequelize-cli db:seed:all"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mysql2": "2.3",
+    "sequelize-cli": "6.2",
+    "typescript": "^4.4.2"
+  },
+  "dependencies": {
+    "@types/sequelize": "4.28",
+    "dotenv": "10.0",
+    "sequelize": "6.3"
+  }
+}
