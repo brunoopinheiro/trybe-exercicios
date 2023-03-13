@@ -35,6 +35,13 @@ class BooksController {
 
     return res.status(statusCodes.NO_CONTENT).end();
   };
+
+  public remove = async (req: Request, res: Response): Promise<Response> => {
+    const id = Number(req.params.id);
+    await this.bookService.remove(id);
+
+    return res.status(statusCodes.NO_CONTENT).end();
+  }
 }
 
 export default BooksController;

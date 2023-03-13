@@ -81,6 +81,15 @@ class BookService {
 
     return this.model.update(id, book);
   }
+
+  public async remove(id: number): Promise<void> {
+    const bookFound = await this.model.getById(id);
+    if (!bookFound) {
+      throw new NotFoundError('Book not found!');
+    }
+
+    this.model.remove(id);
+  }
 }
 
 export default BookService;
