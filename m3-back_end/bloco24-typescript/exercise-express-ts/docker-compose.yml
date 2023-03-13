@@ -1,0 +1,36 @@
+version: "3"
+
+services:
+  node:
+    image: node:16.14-alpine
+    container_name: app
+    tty: true
+    stdin_open: true
+    command: sh
+    working_dir: /app
+    volumes:
+      - ./:/app
+    depends_on:
+      - db
+    ports:
+      - 3000:3000
+    environment:
+      MYSQL_USER: root
+      MYSQL_PASSWORD: password
+      MYSQL_HOST: db
+      JWT_SECRET: secretJWT
+      API_HOST: 'node'
+      API_PORT: 3000
+      NODE_ENV: 'development'
+
+  db:
+    container_name: typescript_express
+    image: mysql:8.0.23
+    # Indica de forma fixa a plataforma na qual o banco irá rodar
+    platform: linux/x86_64
+    restart: always
+    ports:
+      - 3306:3306
+      - 33060:33060
+    environment:
+      MYSQL_ROOT_PASSWORD: password
