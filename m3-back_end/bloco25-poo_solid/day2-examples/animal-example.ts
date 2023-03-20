@@ -1,5 +1,5 @@
 class Animal {
-  constructor(public name: string, private birthdate: Date) { }
+  constructor(public name: string, protected birthdate: Date) { }
 
   get age() {
       const timeDiff = Math.abs(
@@ -17,6 +17,10 @@ class Mammal extends Animal {
 }
 
 class Bird extends Animal {
+  constructor(public name: string) {
+    super(name, new Date());
+  }
+
   fly() {
       console.log(`${this.name} is flying!`);
   }
@@ -24,7 +28,7 @@ class Bird extends Animal {
 
 const tiger = new Mammal('Tigre', new Date(Date.parse('May 03, 2020')));
 
-const parrot = new Bird('Papagaio', new Date(Date.parse('Jun 07, 2017')));
+const parrot = new Bird('Papagaio');
 
 const main = (animal: Animal) => {
   console.log(animal.age);

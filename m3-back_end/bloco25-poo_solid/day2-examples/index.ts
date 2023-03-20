@@ -1,5 +1,6 @@
 class Superclass {
-  constructor (public isSuper: boolean) {
+  public isSuper: boolean
+  constructor () {
       this.isSuper = true;
   }
 
@@ -9,15 +10,23 @@ class Superclass {
 }
 
 class Subclass extends Superclass {
-
+  constructor() {
+    super();
+    this.isSuper = false;
+  }
 }
 
 const myFunc = (superclass: Superclass) => {
   superclass.sayHello();
+  if (superclass.isSuper === true) {
+    console.log('Super!');
+  } else {
+    console.log('Sub!');
+  }
 }
 
-const superObject = new Superclass(true);
-const subObject = new Subclass(true);
+const superObject = new Superclass();
+const subObject = new Subclass();
 
 myFunc(superObject);
 myFunc(subObject);
