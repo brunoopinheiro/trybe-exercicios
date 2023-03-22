@@ -1,24 +1,28 @@
-// eslint-disable-next-line import/no-unresolved, import/extensions
-import progressNotification from './notifications';
+/* eslint-disable import/extensions */
+/* eslint-disable import/no-unresolved */
+import ConsoleNotification from './ConsoleNotification';
+import INotificator from './INotificator';
 
 class ReadingTracker {
   private readingGoal: number;
   private booksRead: number;
+  notificator: INotificator;
   
-  constructor(readingGoal: number) {
+  constructor(readingGoal: number, notificator: INotificator = new ConsoleNotification('console')) {
     this.readingGoal = readingGoal;
     this.booksRead = 0;
+    this.notificator = notificator;
   }
 
   trackReadings(readsCount: number): void {
     this.booksRead += readsCount;
     if (this.booksRead >= this.readingGoal) {
-      progressNotification(
+      this.notificator.sendNotification(
         'Congratulations! You\'ve reached your reading goal!',
       );
       return;
     }
-    progressNotification(
+    this.notificator.sendNotification(
       'There are still some books to go!',
     );
   }
