@@ -4,9 +4,15 @@ type Discipline = {
   letterGrade?: string;
 }
 
+type School = {
+  name: string;
+  approvalGrade: number;
+}
+
 type Student = {
   name: string;
   disciplines: Discipline[];
+  school: School;
 }
 
 const GRADE_DICT = {
@@ -33,9 +39,9 @@ const percentageGradesIntoLetters = (student: Student): Student => ({
   disciplines: student.disciplines.map(getLetterGrades),
 });
 
-const approvedStudents = ({ disciplines }: Student): boolean =>
+const approvedStudents = ({ disciplines, school }: Student): boolean =>
   disciplines.every(
-    ({ grade }) => grade > 0.7,
+    ({ grade }) => grade > school.approvalGrade,
   );
 
 const updateApprovalData = ({ name: studentName, disciplines }: Student): void => {

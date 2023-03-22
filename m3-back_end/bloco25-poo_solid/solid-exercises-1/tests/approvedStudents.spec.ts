@@ -1,59 +1,63 @@
+// ./tests/approvedStudents.spec.ts
+
 import 'mocha';
-import { expect } from 'chai';
-import { approvedStudents } from '../src';
+import { expect } from "chai";
+import { approvedStudents } from "../src";
 
 const disciplinesDict = {
-  mathematics: 'matematica',
-  history: 'historia',
+  mathematics: 'matemática',
+  history: 'história',
 };
 
-describe('Testando a funcao "approvedStudents"', function () {
-  describe('- Quando todas as notas sao maiores que 0.7', function () {
-    it('Retorna true', function () {
+describe('Testando a função "approvedStudents"', function () {
+  const APPROVAL_GRADE = 0.7;
+
+  describe('quando todas as notas são maiores que o critério de aprovação', function () {
+    it('retorna "true"', function () {
       const disciplines = [
         { name: disciplinesDict.mathematics, grade: 0.8 },
         { name: disciplinesDict.history, grade: 0.9 },
       ];
-
-      const student = {
-        name: 'test',
-        disciplines: disciplines,
+      const school = {
+        name: "School",
+        approvalGrade: APPROVAL_GRADE
       };
 
-      const result = approvedStudents(student);
+      const result = approvedStudents({ name: "Student", disciplines, school });
 
       expect(result).to.be.equal(true);
     });
   });
 
-  describe('- Quando todas as notas sao menores que 0.7', function () {
-    it('Retorna false', function () {
+  describe('quando todas as notas são menores que o critério de aprovação', function () {
+    it('retorna "false"', function () {
       const disciplines = [
         { name: disciplinesDict.mathematics, grade: 0.1 },
         { name: disciplinesDict.history, grade: 0.2 },
       ];
-      const student = {
-        name: 'test',
-        disciplines: disciplines,
+      const school = {
+        name: "School",
+        approvalGrade: APPROVAL_GRADE
       };
 
-      const result = approvedStudents(student);
+      const result = approvedStudents({ name: "Student", disciplines, school });
 
       expect(result).to.be.equal(false);
     });
   });
 
-  describe('- Quando parte das notas sao menores que 0.7', function () {
-    it('Retorna false', function () {
+  describe('quando parte das notas são menores que o critério de aprovação', function () {
+    it('retorna "false"', function () {
       const disciplines = [
         { name: disciplinesDict.mathematics, grade: 0.5 },
         { name: disciplinesDict.history, grade: 0.9 },
       ];
-      const student = {
-        name: 'test',
-        disciplines: disciplines,
+      const school = {
+        name: "School",
+        approvalGrade: APPROVAL_GRADE
       };
-      const result = approvedStudents(student);
+
+      const result = approvedStudents({ name: "Student", disciplines, school });
 
       expect(result).to.be.equal(false);
     });
