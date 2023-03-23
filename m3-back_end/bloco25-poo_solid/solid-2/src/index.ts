@@ -1,15 +1,12 @@
-import MySQLConnector from "./Connector";
+import { Connector, RedisConnector } from './connectors';
 
 const token = 'ce42033d-9133-457a-a1a1-41ac0b63a333';
-const conn = new MySQLConnector({
-  host: 'mysqldb',
-  port: 3306,
-  database: 'counter',
-  user: 'root',
-  password: 'example',
+const conn = new RedisConnector({
+  host: 'redisdb',
+  port: 6379,
 });
 
-const main = (connector: MySQLConnector) => {
+const main = (connector: Connector) => {
   connector.firstCount(token);
 
   const logCount = async () => {
