@@ -156,6 +156,50 @@ The program has more than 1,500 hours of face-to-face and online classrooms, add
 - [X] 22-3: _Making ideas into a database model_
 - [X] 22-4: _[Project - One for All] (100%)_
 
+##### Block 23: Introduction to web development with Node.js
+
+- [X] 23-1: _Node.js: async runtime_
+- [X] 23-2: _REST API with Express_
+- [X] 23-3: _Integrations Tests_
+- [X] 23-4: _Express and Middlewares_
+- [X] 23-5: _Express and MySQL_
+- [X] 23-6: _[Project - Talker Manager] (100%)_
+
+##### Block 24: Software Architecture: Model, Service, Controller
+
+- [X] 24-1: _Model Layer_
+- [X] 24-2: _Service Layer_
+- [X] 24-3: _Controller Layer_
+- [X] 24-4: _[Project - Store Manager](https://github.com/brunoopinheiro/store-manager-trybe) (100%)_
+
+##### Block 25: Node.js: ORM and Authentication
+
+- [X] 25-1: _ORM - Application interface with the database_
+- [X] 25-2: _ORM: 1:1 and 1:N associations_
+- [X] 25-3: _ORM: N:N associations and transactions_
+- [X] 25-4: _JWT - (JSON Web Token)_
+- [X] 25-5: _[Project - Blogs API](https://github.com/brunoopinheiro/blogs_api-trybe_project) (100%)_
+
+##### Block 26: Masterclass: Cloud applications
+
+- [X] 26-1: _Railway Deploy_
+
+##### Block 27: Introduction to Typescript
+
+- [X] 27-1: _Introduction_
+- [X] 27-2: _Static and generic types_
+- [X] 27-3: _Express with Typescript_
+- [X] 27-4: _[Project - Trybesmith] (100%)_
+
+##### Block 28: POO and SOLID
+
+- [X] 28-1: _Introduction to POO_
+- [X] 28-2: _Heritage and Composition_
+- [X] 28-3: _Polymorphism_
+- [X] 28-4: _SOLID - Introduction and S, O, and D principles_
+- [X] 28-5: _SOLID - L, and I principles_
+- [ ] 28-6: _[Project - Trybers and Dragons] ()_
+
 ...
 
 ## Computer Science :hourglass_flowing_sand:
