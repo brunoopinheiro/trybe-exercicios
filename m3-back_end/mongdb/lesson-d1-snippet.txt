@@ -1,0 +1,33 @@
+// DIFERENCAS VSCODE
+
+// conectar
+// mongodb://localhost:27017
+
+// terminal: use class
+// vscode: use('class')
+
+use('class);
+// show ('collections');
+
+// Array
+db.inventory.find();
+
+// Primeiro Resultado
+db.inventory.findOne();
+
+// Filtro
+db.inventory.find({ name: 'caderno' });
+
+// adicionar varios itens
+db.inventory.insertMany([
+  { item: 'paper', qtd: 100, size: { h: 22, w: 30 } },
+  { item: 'planner', qtd: 57, size: { h: 10, w: 30 } },
+]);
+
+// filtro com AND
+db.inventory.find({
+  item: 'paper',
+  status: 'D',
+});
+
+db.users.find({ "addresses.state": "NY" });
