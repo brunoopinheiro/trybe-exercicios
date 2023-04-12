@@ -1,0 +1,205 @@
+use("aula_11_3");
+
+// db.itens.drop();
+// db.itens.insertMany([
+//   {
+//     "_id": 1,
+//     "tags": [
+//       "red pen",
+//       "green pen"
+//     ],
+//     "quantidade": [
+//       80,
+//       90
+//     ],
+//     "valor_entrada_itens": 100,
+//     "valor_saida_itens": 50,
+//     "categoria": "Papelaria"
+//   },
+//   {
+//     "_id": 2,
+//     "tags": [
+//       "apple",
+//       "lime"
+//     ],
+//     "quantidade": [
+//       105,
+//       95
+//     ],
+//     "valor_entrada_itens": 200,
+//     "valor_saida_itens": 50,
+//     "categoria": "Frutas"
+//   },
+//   {
+//     "_id": 3,
+//     "tags": "pencil",
+//     "quantidade": [
+//       50
+//     ],
+//     "valor_entrada_itens": 41,
+//     "valor_saida_itens": 60,
+//     "categoria": "Papelaria"
+//   },
+//   {
+//     "_id": 4,
+//     "tags": [
+//       "orange",
+//       "lemon",
+//       "grapefruit"
+//     ],
+//     "quantidade": [
+//       85,
+//       70,
+//       60
+//     ],
+//     "valor_entrada_itens": 40,
+//     "valor_saida_itens": 150,
+//     "categoria": "Frutas"
+//   },
+//   {
+//     "_id": 5,
+//     "tags": [
+//       "pencil",
+//       "paper",
+//       "blue pen"
+//     ],
+//     "quantidade": [
+//       50,
+//       66,
+//       32
+//     ],
+//     "valor_entrada_itens": 243,
+//     "valor_saida_itens": 160,
+//     "categoria": "Papelaria"
+//   },
+//   {
+//     "_id": 6,
+//     "tags": [
+//       "lime",
+//       "orange"
+//     ],
+//     "quantidade": [
+//       10,
+//       20
+//     ],
+//     "valor_entrada_itens": 27,
+//     "valor_saida_itens": 40,
+//     "categoria": "Frutas"
+//   },
+//   {
+//     "_id": 7,
+//     "tags": [
+//       "orange",
+//       "apple",
+//       "lemon"
+//     ],
+//     "quantidade": [
+//       81,
+//       5,
+//       67
+//     ],
+//     "valor_entrada_itens": 400,
+//     "valor_saida_itens": 500,
+//     "categoria": "Frutas"
+//   },
+//   {
+//     "_id": 8,
+//     "tags": [
+//       "pineapple",
+//       "lime",
+//       "grapefruit"
+//     ],
+//     "quantidade": [
+//       120,
+//       4,
+//       2
+//     ],
+//     "valor_entrada_itens": 320,
+//     "valor_saida_itens": 150,
+//     "categoria": "Frutas"
+//   },
+//   {
+//     "_id": 9,
+//     "tags": [
+//       "apple"
+//     ],
+//     "quantidade": [
+//       8
+//     ],
+//     "valor_entrada_itens": 109,
+//     "valor_saida_itens": 250,
+//     "categoria": "Frutas"
+//   },
+//   {
+//     "_id": 10,
+//     "tags": [
+//       "paper",
+//       "pencil"
+//     ],
+//     "quantidade": [
+//       15,
+//       32
+//     ],
+//     "valor_entrada_itens": 10,
+//     "valor_saida_itens": 20,
+//     "categoria": "Papelaria"
+//   }
+// ])
+
+// db.itens.find();
+
+// db.itens.find({
+//   tags: 'lemon'
+// });
+
+// const prods = ['lemon', 'orange'];
+// db.itens.find({
+//   tags: {
+//     $all: prods
+//   }
+// });
+
+// db.itens.find({
+//   quantidade: {
+//     $elemMatch: {
+//       $gt: 70,
+//       $lt: 100,
+//     }
+//   }
+// });
+
+// db.itens.find({
+//   quantidade: {
+//     $gt: 100,
+//   }
+// }).count();
+
+// db.itens.find({
+//   tags: {
+//     $size: 3
+//   }
+// });
+
+// db.itens.find({
+//   $expr: {
+//     $gt: ['$valor_entrada_itens', '$valor_saida_itens']
+//   }
+// });
+
+// db.itens.find({
+//   categoria: {
+//     $regex: /^papel/i
+//   }
+// });
+
+// db.itens.find({
+//   tags: {
+//     $regex: /pen$/i
+//   }
+// });
+
+// db.itens.find({
+//   valor_entrada_itens: {
+//     $mod: [2, 0]
+//   }
+// });
