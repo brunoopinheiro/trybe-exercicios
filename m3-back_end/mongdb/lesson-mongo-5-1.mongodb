@@ -1,0 +1,61 @@
+use('sales');
+
+// db.supplies.updateOne(
+//   { _id: 1 },
+//   {
+//     $push: {
+//       items: {
+//         name: 'notepad',
+//         price: 35.29,
+//         quantity: 2,
+//       },
+//     },
+//   },
+//   { upsert: true },
+// );
+
+// db.supplies.updateOne(
+//   {},
+//   {
+//     $push: {
+//       items: {
+//         $each: [
+//           { name: 'pens', price: 56.12, quantity: 5 },
+//           { name: 'envelopes', price: 19.95, quantity: 8 },
+//         ],
+//       },
+//     },
+//   },
+//   { upsert: true },
+// );
+
+// db.dropDatabase();
+
+// db.supplies.updateOne(
+//   { _id: 1 },
+//   {
+//     $push: {
+//       items: {
+//         $each: [
+//           { name: 'notepad', price: 35.29, quantity: 2 },
+//           { name: 'envelopes', price: 19.95, quantity: 8 },
+//           { name: 'pens', price: 56.12, quantity: 5 },
+//           { name: 'clips', price: 0.99, quantity: 1 },
+//         ],
+//         $sort: { quantity: -1 },
+//         $slice: 3,
+//       },
+//     },
+//   },
+//   { upsert: true },
+// );
+
+// Remove o primeiro elemento
+// db.supplies.updateOne({ _id: 1 }, { $pop: { items: -1 } });
+
+// Remove o ultimo elemento
+// db.supplies.updateOne({ _id: 1 }, { $pop: { items: 1 } });
+
+
+
+db.supplies.find();
