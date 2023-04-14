@@ -154,13 +154,49 @@ use('sales');
 //   ],
 // );
 
-db.survey.updateMany(
-  {},
-  {
-    $pull: {
-      results: { score: 8, item: 'B' },
-    },
-  },
-);
+// db.survey.updateMany(
+//   {},
+//   {
+//     $pull: {
+//       results: { score: 8, item: 'B' },
+//     },
+//   },
+// );
 
-db.survey.find();
+// db.survey.find();
+
+// db.dropDatabase();
+
+// db.inventory.insertOne(
+//   {
+//     _id: 1,
+//     item: 'polarizing_filter',
+//     tags: ['electronics', 'camera'],
+//   },
+// );
+
+// db.inventory.updateOne(
+//   { _id: 1 },
+//   { $addToSet: { tags: 'acessories' } },
+// );
+
+// db.inventory.insertOne(
+//   {
+//     _id: 2,
+//     item: 'cable',
+//     tags: ['electronics', 'supplies'],
+//   },
+// );
+
+// db.inventory.updateOne(
+//   { _id: 2 },
+//   {
+//     $addToSet: {
+//       tags: {
+//         $each: ['camera', 'electronics', 'acessories'],
+//       },
+//     },
+//   },
+// );
+
+db.inventory.find();
