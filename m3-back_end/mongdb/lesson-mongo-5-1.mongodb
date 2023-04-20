@@ -1,0 +1,202 @@
+use('sales');
+
+// OPERADOR $PUSH
+// db.supplies.updateOne(
+//   { _id: 1 },
+//   {
+//     $push: {
+//       items: {
+//         name: 'notepad',
+//         price: 35.29,
+//         quantity: 2,
+//       },
+//     },
+//   },
+//   { upsert: true },
+// );
+
+// db.supplies.updateOne(
+//   {},
+//   {
+//     $push: {
+//       items: {
+//         $each: [
+//           { name: 'pens', price: 56.12, quantity: 5 },
+//           { name: 'envelopes', price: 19.95, quantity: 8 },
+//         ],
+//       },
+//     },
+//   },
+//   { upsert: true },
+// );
+
+// OPERADOR $POP
+// db.dropDatabase();
+// db.supplies.updateOne(
+//   { _id: 1 },
+//   {
+//     $push: {
+//       items: {
+//         $each: [
+//           { name: 'notepad', price: 35.29, quantity: 2 },
+//           { name: 'envelopes', price: 19.95, quantity: 8 },
+//           { name: 'pens', price: 56.12, quantity: 5 },
+//           { name: 'clips', price: 0.99, quantity: 1 },
+//         ],
+//         $sort: { quantity: -1 },
+//         $slice: 3,
+//       },
+//     },
+//   },
+//   { upsert: true },
+// );
+
+// Remove o primeiro elemento
+// db.supplies.updateOne({ _id: 1 }, { $pop: { items: -1 } });
+
+// Remove o ultimo elemento
+// db.supplies.updateOne({ _id: 1 }, { $pop: { items: 1 } });
+
+// OPERADOR $PULL
+// db.dropDatabase();
+// db.supplies.insertMany(
+//   [{
+//     _id: 1,
+//     items: [
+//       {
+//         "name" : "notepad",
+//         "price" : 35.29,
+//         "quantity" : 2,
+//       },
+//       {
+//         "name": "envelopes",
+//         "price": 19.95,
+//         "quantity": 8,
+//       },
+//       {
+//         "name": "pens",
+//         "price": 56.12,
+//         "quantity": 5,
+//       },
+//     ],
+//   },
+//   {
+//     _id: 2,
+//     items: [
+//       {
+//         "name" : "pencil",
+//         "price" : 5.29,
+//         "quantity" : 2,
+//       },
+//       {
+//         "name": "envelopes",
+//         "price": 19.95,
+//         "quantity": 8,
+//       },
+//       {
+//         "name": "backpack",
+//         "price": 80.12,
+//         "quantity": 1,
+//       },
+//       {
+//         "name": "pens",
+//         "price": 56.12,
+//         "quantity": 5,
+//       },
+//     ],
+//   }]
+// );
+
+// db.supplies.updateMany(
+//   {},
+//   {
+//     $pull: {
+//       items: {
+//         name: { $in: ['pens', 'envelopes'] },
+//       },
+//     },
+//   },
+// );
+
+// db.supplies.find();
+
+// db.profiles.insertOne(
+//   { _id: 1, votes: [3, 5, 6, 7, 7, 8] },
+// );
+
+// db.profiles.updateOne(
+//   { _id: 1 },
+//   {
+//     $pull: {
+//       votes: { $gte: 6 },
+//     },
+//   },
+// );
+
+// db.profiles.find();
+
+// db.survey.insertMany(
+//   [
+//     {
+//       _id: 1,
+//       results: [
+//         { item: "A", score: 5 },
+//         { item: "B", score: 8, comment: "Strongly agree" },
+//       ],
+//     },
+//     {
+//       _id: 2,
+//       results: [
+//         { item: "C", score: 8, comment: "Strongly agree" },
+//         { item: "B", score: 4 },
+//       ],
+//     }
+//   ],
+// );
+
+// db.survey.updateMany(
+//   {},
+//   {
+//     $pull: {
+//       results: { score: 8, item: 'B' },
+//     },
+//   },
+// );
+
+// db.survey.find();
+
+// db.dropDatabase();
+
+// db.inventory.insertOne(
+//   {
+//     _id: 1,
+//     item: 'polarizing_filter',
+//     tags: ['electronics', 'camera'],
+//   },
+// );
+
+// db.inventory.updateOne(
+//   { _id: 1 },
+//   { $addToSet: { tags: 'acessories' } },
+// );
+
+// db.inventory.insertOne(
+//   {
+//     _id: 2,
+//     item: 'cable',
+//     tags: ['electronics', 'supplies'],
+//   },
+// );
+
+// db.inventory.updateOne(
+//   { _id: 2 },
+//   {
+//     $addToSet: {
+//       tags: {
+//         $each: ['camera', 'electronics', 'acessories'],
+//       },
+//     },
+//   },
+// );
+
+db.inventory.find();
