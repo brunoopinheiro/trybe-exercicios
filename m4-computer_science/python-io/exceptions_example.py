@@ -16,6 +16,4 @@ if __name__ == "__main__":
     else:
         print("Arquivo manipulado e fechado com sucesso")
     finally:
-        grades_file.close()
-        recu_students_file.close()
         print("Fim da tentativa de ler o arquivo.")
