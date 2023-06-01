@@ -1,13 +1,13 @@
 def quick_sort(numbers, start, end):
     if start < end:
         p = partition(numbers, start, end)
-        quick_sort(numbers, start, p -1)
+        quick_sort(numbers, start, p - 1)
         quick_sort(numbers, p + 1, end)
 
 
 def partition(numbers, start, end):
     pivot = numbers[end]
-    delimiter = start -1
+    delimiter = start - 1
 
     for i in range(start, end):
         if numbers[i] <= pivot:

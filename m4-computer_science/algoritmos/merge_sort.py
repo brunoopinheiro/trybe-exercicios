@@ -8,7 +8,7 @@ def merge_sort(numbers, start=0, end=None):
         merge_sort(numbers, mid, end)
         merge(numbers, start, mid, end)
 
-    
+
 def merge(numbers, start, mid, end):
     left = numbers[start:mid]
     right = numbers[mid:end]
