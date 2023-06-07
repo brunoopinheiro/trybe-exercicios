@@ -96,6 +96,10 @@ class LinkedList:
                 value_returned = Node(value_to_be_returned.value)
         return value_returned
 
+    def get_mid_element(self):
+        position = self.__length // 2
+        return self.get_element_at(position)
+
 
 if __name__ == "__main__":
     linked_list = LinkedList()
