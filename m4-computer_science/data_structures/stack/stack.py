@@ -35,6 +35,16 @@ class Stack:
         value = self._data[-1]
         return value
 
+    def min_value(self):
+        if self.is_empty():
+            return None
+
+        min_value = self._data[0]
+        for elem in self._data:
+            if elem < min_value:
+                min_value = elem
+        return min_value
+
     def clear(self):
         self._data.clear()
 
