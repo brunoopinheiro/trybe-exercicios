@@ -1,2 +1,7 @@
 **/node_modules/
 **/coverage/
+**/bin/
+**/obj/
+**/.vscode/
+
+trybe-exercicios.sln
